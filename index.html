@@ -1,2898 +1,7 @@
-<!-- <!DOCTYPE html>
-
-<html lang="ar" dir="rtl">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1, viewport-fit=cover"
->
-
-<meta
-  name="theme-color"
-  content="#005c32"
->
-
-<title>
-IAC | November Sham 2026
-</title>
-
-
-<!-- QR Scanner -->
-
-<script
-  src="https://unpkg.com/html5-qrcode"
-  type="text/javascript">
-</script>
-
-
-<!-- Arabic Font -->
-
-<link
-  href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
-  rel="stylesheet"
->
-
-
-<style>
-
-:root {
-
-  --green:#006838;
-
-  --green-dark:#004c2a;
-
-  --green-deep:#00371e;
-
-  --green-light:#eaf7f0;
-
-  --success:#078447;
-
-  --success-light:#e8f8ef;
-
-  --danger:#d94343;
-
-  --danger-light:#fff1f1;
-
-  --warning:#e6a11a;
-
-  --bg:#f3f7f5;
-
-  --text:#14251d;
-
-  --muted:#74827a;
-
-  --border:#dfe9e3;
-
-  --white:#ffffff;
-}
-
-
-* {
-
-  box-sizing:border-box;
-
-  -webkit-tap-highlight-color:
-    transparent;
-}
-
-
-html,
-body {
-
-  margin:0;
-
-  padding:0;
-
-  min-height:100%;
-
-  font-family:
-    "Cairo",
-    sans-serif;
-
-  background:
-    var(--bg);
-
-  color:
-    var(--text);
-}
-
-
-body {
-
-  min-height:
-    100vh;
-}
-
-
-button {
-
-  font-family:
-    inherit;
-}
-
-
-/* ======================================
-   HEADER
-====================================== */
-
-.header {
-
-  position:relative;
-
-  overflow:hidden;
-
-  padding:
-    calc(30px + env(safe-area-inset-top))
-    20px
-    78px;
-
-  color:white;
-
-  text-align:center;
-
-  background:
-
-    radial-gradient(
-      circle at 15% 0%,
-      rgba(255,255,255,.14),
-      transparent 32%
-    ),
-
-    linear-gradient(
-      145deg,
-      var(--green-deep),
-      var(--green)
-    );
-}
-
-
-.header::before {
-
-  content:"";
-
-  position:absolute;
-
-  width:250px;
-
-  height:250px;
-
-  left:-125px;
-
-  top:-125px;
-
-  border:
-
-    1px solid
-    rgba(255,255,255,.08);
-
-  border-radius:50%;
-}
-
-
-.header::after {
-
-  content:"";
-
-  position:absolute;
-
-  width:180px;
-
-  height:180px;
-
-  right:-90px;
-
-  bottom:-90px;
-
-  border:
-
-    1px solid
-    rgba(255,255,255,.07);
-
-  border-radius:50%;
-}
-
-
-.brand {
-
-  position:relative;
-
-  z-index:2;
-
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-
-  gap:14px;
-}
-
-
-.logo {
-
-  width:68px;
-
-  height:68px;
-
-  flex:0 0 68px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  border:
-
-    2px solid
-    rgba(255,255,255,.9);
-
-  border-radius:50%;
-
-  background:
-    rgba(255,255,255,.06);
-
-  font-size:22px;
-
-  font-weight:800;
-}
-
-
-.brand-info {
-
-  text-align:right;
-}
-
-
-.brand-name {
-
-  font-size:21px;
-
-  line-height:1.5;
-
-  font-weight:800;
-}
-
-
-.brand-en {
-
-  margin-top:1px;
-
-  direction:ltr;
-
-  font-size:10px;
-
-  letter-spacing:.25px;
-
-  opacity:.72;
-}
-
-
-.campaign {
-
-  position:relative;
-
-  z-index:2;
-
-  display:inline-flex;
-
-  align-items:center;
-
-  gap:7px;
-
-  margin-top:20px;
-
-  padding:
-    7px
-    14px;
-
-  border:
-
-    1px solid
-    rgba(255,255,255,.18);
-
-  border-radius:30px;
-
-  background:
-    rgba(255,255,255,.07);
-
-  font-size:11px;
-
-  font-weight:600;
-}
-
-
-.dot {
-
-  width:7px;
-
-  height:7px;
-
-  border-radius:50%;
-
-  background:#75e9ad;
-
-  box-shadow:
-
-    0 0 0 4px
-    rgba(117,233,173,.12);
-}
-
-
-/* ======================================
-   MAIN
-====================================== */
-
-.app {
-
-  position:relative;
-
-  z-index:5;
-
-  width:
-    min(
-      calc(100% - 26px),
-      480px
-    );
-
-  margin:
-    -42px
-    auto
-    35px;
-}
-
-
-.panel {
-
-  padding:22px;
-
-  border:
-
-    1px solid
-    rgba(0,104,56,.06);
-
-  border-radius:25px;
-
-  background:white;
-
-  box-shadow:
-
-    0 18px 45px
-    rgba(0,70,38,.10);
-}
-
-
-.title {
-
-  text-align:center;
-
-  font-size:19px;
-
-  font-weight:800;
-}
-
-
-.description {
-
-  margin:
-    5px
-    0
-    20px;
-
-  text-align:center;
-
-  color:
-    var(--muted);
-
-  font-size:11px;
-}
-
-
-/* ======================================
-   SCANNER
-====================================== */
-
-.scanner-container {
-
-  position:relative;
-
-  overflow:hidden;
-
-  min-height:300px;
-
-  border-radius:21px;
-
-  background:#06150e;
-}
-
-
-#reader {
-
-  width:100%;
-
-  min-height:300px;
-
-  border:0 !important;
-
-  background:#06150e;
-}
-
-
-#reader video {
-
-  width:100% !important;
-
-  min-height:300px;
-
-  object-fit:cover !important;
-
-  border-radius:21px;
-}
-
-
-/*
-إخفاء واجهة المكتبة الافتراضية
-*/
-
-#reader__dashboard {
-
-  display:none !important;
-}
-
-
-#reader__scan_region {
-
-  background:
-    transparent !important;
-}
-
-
-#reader img {
-
-  display:none !important;
-}
-
-
-/* Placeholder */
-
-.placeholder {
-
-  position:absolute;
-
-  inset:0;
-
-  z-index:2;
-
-  display:flex;
-
-  flex-direction:column;
-
-  align-items:center;
-
-  justify-content:center;
-
-  padding:25px;
-
-  color:white;
-
-  text-align:center;
-
-  background:
-
-    radial-gradient(
-      circle at center,
-      #0d2619,
-      #06150e 70%
-    );
-}
-
-
-.qr-icon {
-
-  width:72px;
-
-  height:72px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  margin-bottom:17px;
-
-  border-radius:21px;
-
-  background:
-    rgba(255,255,255,.09);
-}
-
-
-.qr-shape {
-
-  position:relative;
-
-  width:33px;
-
-  height:33px;
-
-  border:
-    3px solid white;
-}
-
-
-.qr-shape::before {
-
-  content:"";
-
-  position:absolute;
-
-  inset:6px;
-
-  border:
-    3px solid white;
-}
-
-
-.placeholder-title {
-
-  font-size:14px;
-
-  font-weight:800;
-}
-
-
-.placeholder-text {
-
-  margin-top:6px;
-
-  color:
-    rgba(255,255,255,.55);
-
-  font-size:10px;
-
-  line-height:1.8;
-}
-
-
-/* Scanner overlay */
-
-.scanner-overlay {
-
-  pointer-events:none;
-
-  position:absolute;
-
-  inset:0;
-
-  z-index:10;
-
-  display:none;
-}
-
-
-.scan-frame {
-
-  position:absolute;
-
-  width:200px;
-
-  height:200px;
-
-  left:50%;
-
-  top:50%;
-
-  transform:
-    translate(-50%,-50%);
-}
-
-
-.corner {
-
-  position:absolute;
-
-  width:37px;
-
-  height:37px;
-
-  border-style:solid;
-
-  border-color:white;
-}
-
-
-.corner.tl {
-
-  top:0;
-
-  left:0;
-
-  border-width:
-    4px 0 0 4px;
-
-  border-radius:
-    12px 0 0 0;
-}
-
-
-.corner.tr {
-
-  top:0;
-
-  right:0;
-
-  border-width:
-    4px 4px 0 0;
-
-  border-radius:
-    0 12px 0 0;
-}
-
-
-.corner.bl {
-
-  bottom:0;
-
-  left:0;
-
-  border-width:
-    0 0 4px 4px;
-
-  border-radius:
-    0 0 0 12px;
-}
-
-
-.corner.br {
-
-  bottom:0;
-
-  right:0;
-
-  border-width:
-    0 4px 4px 0;
-
-  border-radius:
-    0 0 12px 0;
-}
-
-
-.scan-line {
-
-  position:absolute;
-
-  left:10px;
-
-  right:10px;
-
-  top:15px;
-
-  height:2px;
-
-  background:
-
-    linear-gradient(
-      90deg,
-      transparent,
-      #73ffb4,
-      transparent
-    );
-
-  box-shadow:
-
-    0 0 10px
-    rgba(115,255,180,.8);
-
-  animation:
-    scanAnimation
-    2s
-    ease-in-out
-    infinite;
-}
-
-
-@keyframes scanAnimation {
-
-  0% {
-
-    top:15px;
-
-    opacity:.35;
-  }
-
-  50% {
-
-    opacity:1;
-  }
-
-  100% {
-
-    top:180px;
-
-    opacity:.35;
-  }
-}
-
-
-/* ======================================
-   BUTTONS
-====================================== */
-
-.btn {
-
-  width:100%;
-
-  border:0;
-
-  outline:0;
-
-  cursor:pointer;
-
-  margin-top:17px;
-
-  padding:
-    16px
-    18px;
-
-  border-radius:15px;
-
-  font-size:14px;
-
-  font-weight:800;
-
-  transition:
-    transform .15s,
-    opacity .15s;
-}
-
-
-.btn:active {
-
-  transform:
-    scale(.985);
-}
-
-
-.btn-primary {
-
-  color:white;
-
-  background:
-
-    linear-gradient(
-      135deg,
-      var(--green-dark),
-      var(--green)
-    );
-
-  box-shadow:
-
-    0 11px 26px
-    rgba(0,104,56,.20);
-}
-
-
-.btn-secondary {
-
-  color:
-    var(--green);
-
-  background:
-    var(--green-light);
-}
-
-
-.btn-deliver {
-
-  margin:0;
-
-  color:white;
-
-  background:
-
-    linear-gradient(
-      135deg,
-      #005a31,
-      #078447
-    );
-
-  box-shadow:
-
-    0 11px 25px
-    rgba(0,104,56,.20);
-}
-
-
-.btn:disabled {
-
-  cursor:not-allowed;
-
-  opacity:.55;
-}
-
-
-/* ======================================
-   RESULT
-====================================== */
-
-#result {
-
-  display:none;
-
-  margin-top:18px;
-}
-
-
-.person-card {
-
-  overflow:hidden;
-
-  border:
-
-    1px solid
-    var(--border);
-
-  border-radius:20px;
-
-  background:white;
-}
-
-
-.person-info {
-
-  padding:21px;
-
-  background:
-
-    linear-gradient(
-      135deg,
-      #f3fbf7,
-      white
-    );
-}
-
-
-.verified {
-
-  display:flex;
-
-  align-items:center;
-
-  gap:7px;
-
-  margin-bottom:13px;
-
-  color:
-    var(--success);
-
-  font-size:10px;
-
-  font-weight:800;
-}
-
-
-.check {
-
-  width:21px;
-
-  height:21px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  border-radius:50%;
-
-  color:white;
-
-  background:
-    var(--success);
-}
-
-
-.label {
-
-  color:
-    var(--muted);
-
-  font-size:10px;
-}
-
-
-.name {
-
-  margin-top:3px;
-
-  font-size:22px;
-
-  line-height:1.5;
-
-  font-weight:800;
-}
-
-
-.id-box {
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:
-    space-between;
-
-  gap:15px;
-
-  margin-top:15px;
-
-  padding:
-    11px
-    13px;
-
-  border-radius:12px;
-
-  background:#f2f6f4;
-}
-
-
-.id-value {
-
-  direction:ltr;
-
-  color:
-    var(--green-dark);
-
-  font-size:13px;
-
-  font-weight:800;
-
-  word-break:
-    break-all;
-}
-
-
-.actions {
-
-  padding:18px;
-
-  border-top:
-
-    1px solid
-    var(--border);
-}
-
-
-/* ======================================
-   DELIVERED
-====================================== */
-
-.delivered {
-
-  display:flex;
-
-  align-items:center;
-
-  gap:13px;
-
-  padding:17px;
-
-  border:
-
-    1px solid
-    #bce7ce;
-
-  border-radius:15px;
-
-  background:
-    var(--success-light);
-}
-
-
-.delivered-icon {
-
-  flex:
-    0 0 44px;
-
-  height:44px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  border-radius:50%;
-
-  color:white;
-
-  background:
-    var(--success);
-
-  font-size:20px;
-
-  font-weight:800;
-}
-
-
-.delivered-title {
-
-  color:
-    var(--success);
-
-  font-size:14px;
-
-  font-weight:800;
-}
-
-
-.delivered-description {
-
-  margin-top:2px;
-
-  color:#59856b;
-
-  font-size:10px;
-}
-
-
-/* ======================================
-   ERROR
-====================================== */
-
-#error {
-
-  display:none;
-
-  margin-top:18px;
-
-  padding:18px;
-
-  border:
-
-    1px solid
-    #f2c5c5;
-
-  border-radius:17px;
-
-  background:
-    var(--danger-light);
-
-  text-align:center;
-}
-
-
-.error-icon {
-
-  width:46px;
-
-  height:46px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  margin:
-    0 auto 10px;
-
-  border-radius:50%;
-
-  color:
-    var(--danger);
-
-  background:#ffdede;
-
-  font-size:21px;
-
-  font-weight:800;
-}
-
-
-.error-title {
-
-  color:
-    var(--danger);
-
-  font-size:14px;
-
-  font-weight:800;
-}
-
-
-#errorText {
-
-  margin-top:5px;
-
-  color:#986262;
-
-  font-size:10px;
-
-  line-height:1.8;
-}
-
-
-/* ======================================
-   LOADING
-====================================== */
-
-.loading {
-
-  position:fixed;
-
-  inset:0;
-
-  z-index:9999;
-
-  display:none;
-
-  align-items:center;
-
-  justify-content:center;
-
-  padding:25px;
-
-  background:
-    rgba(0,35,19,.73);
-
-  backdrop-filter:
-    blur(8px);
-}
-
-
-.loading.active {
-
-  display:flex;
-}
-
-
-.loading-box {
-
-  min-width:190px;
-
-  padding:25px;
-
-  border-radius:22px;
-
-  background:white;
-
-  text-align:center;
-
-  box-shadow:
-
-    0 25px 60px
-    rgba(0,0,0,.20);
-}
-
-
-.spinner {
-
-  width:42px;
-
-  height:42px;
-
-  margin:
-    0 auto 13px;
-
-  border:
-
-    4px solid
-    #e4eee8;
-
-  border-top-color:
-    var(--green);
-
-  border-radius:50%;
-
-  animation:
-    spin .8s
-    linear
-    infinite;
-}
-
-
-@keyframes spin {
-
-  to {
-
-    transform:
-      rotate(360deg);
-  }
-}
-
-
-#loadingText {
-
-  color:
-    var(--green-dark);
-
-  font-size:11px;
-
-  font-weight:800;
-}
-
-
-/* ======================================
-   TOAST
-====================================== */
-
-.toast {
-
-  position:fixed;
-
-  z-index:10000;
-
-  left:50%;
-
-  bottom:
-    calc(
-      25px +
-      env(safe-area-inset-bottom)
-    );
-
-  width:
-    calc(100% - 40px);
-
-  max-width:420px;
-
-  padding:14px;
-
-  transform:
-    translate(-50%,120px);
-
-  opacity:0;
-
-  border-radius:14px;
-
-  color:white;
-
-  background:#10251a;
-
-  text-align:center;
-
-  font-size:11px;
-
-  font-weight:700;
-
-  box-shadow:
-
-    0 15px 40px
-    rgba(0,0,0,.22);
-
-  transition:.3s;
-}
-
-
-.toast.show {
-
-  transform:
-    translate(-50%,0);
-
-  opacity:1;
-}
-
-
-.footer {
-
-  margin-top:19px;
-
-  color:#8a9890;
-
-  text-align:center;
-
-  font-size:9px;
-}
-
-
-.footer strong {
-
-  color:
-    var(--green);
-}
-
-
-@media(max-width:380px) {
-
-  .app {
-
-    width:
-      calc(100% - 18px);
-  }
-
-
-  .panel {
-
-    padding:16px;
-  }
-
-
-  .scan-frame {
-
-    width:175px;
-
-    height:175px;
-  }
-
-
-  @keyframes scanAnimation {
-
-    0% {
-      top:15px;
-    }
-
-    100% {
-      top:155px;
-    }
-  }
-}
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<header class="header">
-
-  <div class="brand">
-
-    <div class="logo">
-      IAC
-    </div>
-
-
-    <div class="brand-info">
-
-      <div class="brand-name">
-        مؤسسة الإغاثة الدولية
-      </div>
-
-      <div class="brand-en">
-        INTERNATIONAL AID CAMPAIGN
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="campaign">
-
-    <span class="dot"></span>
-
-    November Sham 2026
-
-  </div>
-
-</header>
-
-
-
-<main class="app">
-
-<section class="panel">
-
-
-  <div class="title">
-    تسليم البطاقات
-  </div>
-
-
-  <div class="description">
-
-    امسح رمز QR الموجود على البطاقة
-    للتحقق من بيانات المستفيد
-
-  </div>
-
-
-
-  <!-- ==============================
-       CAMERA
-  =============================== -->
-
-  <div class="scanner-container">
-
-
-    <div id="reader"></div>
-
-
-    <div
-      id="placeholder"
-      class="placeholder"
-    >
-
-      <div class="qr-icon">
-
-        <div class="qr-shape"></div>
-
-      </div>
-
-
-      <div class="placeholder-title">
-
-        جاهز لمسح رمز QR
-
-      </div>
-
-
-      <div class="placeholder-text">
-
-        اضغط على الزر أدناه لتشغيل الكاميرا
-        <br>
-        ثم وجّه الكاميرا نحو رمز QR
-
-      </div>
-
-    </div>
-
-
-
-    <div
-      id="scannerOverlay"
-      class="scanner-overlay"
-    >
-
-      <div class="scan-frame">
-
-        <span class="corner tl"></span>
-
-        <span class="corner tr"></span>
-
-        <span class="corner bl"></span>
-
-        <span class="corner br"></span>
-
-        <span class="scan-line"></span>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-
-
-  <button
-    id="scanButton"
-    class="btn btn-primary"
-    onclick="startScanner()"
-  >
-
-    تشغيل الكاميرا ومسح QR
-
-  </button>
-
-
-
-  <!-- ==============================
-       ERROR
-  =============================== -->
-
-  <div id="error">
-
-    <div class="error-icon">
-      !
-    </div>
-
-    <div class="error-title">
-
-      تعذر العثور على المستفيد
-
-    </div>
-
-    <div id="errorText"></div>
-
-  </div>
-
-
-
-  <!-- ==============================
-       RESULT
-  =============================== -->
-
-  <div id="result">
-
-
-    <div class="person-card">
-
-
-      <div class="person-info">
-
-
-        <div class="verified">
-
-          <span class="check">
-            ✓
-          </span>
-
-          تم التحقق من بيانات المستفيد
-
-        </div>
-
-
-        <div class="label">
-
-          الاسم الثلاثي
-
-        </div>
-
-
-        <div
-          id="personName"
-          class="name"
-        ></div>
-
-
-
-        <div class="id-box">
-
-          <span class="label">
-
-            رقم المستفيد ID
-
-          </span>
-
-
-          <span
-            id="personId"
-            class="id-value"
-          ></span>
-
-        </div>
-
-
-      </div>
-
-
-
-      <div
-        id="actions"
-        class="actions"
-      ></div>
-
-
-    </div>
-
-
-
-    <button
-      class="btn btn-secondary"
-      onclick="scanAnother()"
-    >
-
-      مسح بطاقة جديدة
-
-    </button>
-
-
-  </div>
-
-
-</section>
-
-
-
-<div class="footer">
-
-  <strong>IAC</strong>
-
-  &nbsp;•&nbsp;
-
-  November Sham 2026
-
-  <br>
-
-  Card Distribution System
-
-</div>
-
-
-</main>
-
-
-
-<!-- ==============================
-     LOADING
-=============================== -->
-
-<div
-  id="loading"
-  class="loading"
->
-
-  <div class="loading-box">
-
-    <div class="spinner"></div>
-
-    <div id="loadingText">
-
-      جاري التحقق من البيانات...
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<!-- ==============================
-     TOAST
-=============================== -->
-
-<div
-  id="toast"
-  class="toast"
-></div>
-
-
-
-<script>
-
-
-/****************************************************
- * CONFIGURATION
- ****************************************************/
-
-/*
- * رابط Apps Script الحالي.
- *
- * إذا أنشأت Deployment جديد برابط مختلف
- * غيّر هذا السطر فقط.
- */
-
-const API_URL =
-  'https://script.google.com/macros/s/AKfycbyR-bI5o4Z9AEfblClBE5rKMp8lwLS-jNQdQ89Ph0tcCUgh4Y0EppVbpwkHM-X4QU198A/exec';
-
-
-
-/****************************************************
- * VARIABLES
- ****************************************************/
-
-let qrScanner = null;
-
-let scannerRunning = false;
-
-let processingQR = false;
-
-let currentPerson = null;
-
-let toastTimer = null;
-
-
-
-/****************************************************
- * START SCANNER
- ****************************************************/
-
-async function startScanner() {
-
-
-  if (
-    scannerRunning ||
-    processingQR
-  ) {
-
-    return;
-  }
-
-
-  hideError();
-
-  hideResult();
-
-
-  currentPerson = null;
-
-
-  const button =
-    document.getElementById(
-      'scanButton'
-    );
-
-
-  button.disabled = true;
-
-  button.textContent =
-    'جاري تشغيل الكاميرا...';
-
-
-
-  document.getElementById(
-    'placeholder'
-  ).style.display =
-    'none';
-
-
-  document.getElementById(
-    'scannerOverlay'
-  ).style.display =
-    'block';
-
-
-
-  try {
-
-
-    if (!qrScanner) {
-
-      qrScanner =
-        new Html5Qrcode(
-          'reader'
-        );
-    }
-
-
-
-    /*
-     * نطلب الكاميرا الخلفية.
-     *
-     * بما أننا الآن على GitHub Pages
-     * وليست داخل Apps Script iframe
-     * سيعمل getUserMedia بشكل طبيعي.
-     */
-
-    await qrScanner.start(
-
-      {
-        facingMode:
-          "environment"
-      },
-
-      {
-
-        fps: 12,
-
-
-        qrbox:
-          function(
-            viewfinderWidth,
-            viewfinderHeight
-          ) {
-
-
-            const minEdge =
-              Math.min(
-                viewfinderWidth,
-                viewfinderHeight
-              );
-
-
-            const size =
-              Math.floor(
-                minEdge * 0.68
-              );
-
-
-            return {
-
-              width:size,
-
-              height:size
-            };
-          },
-
-
-        aspectRatio:1.0
-
-      },
-
-
-      onScanSuccess,
-
-
-      function() {
-
-        /*
-         * لا نفعل شيئًا
-         * طالما QR غير موجود.
-         */
-
-      }
-
-    );
-
-
-    scannerRunning = true;
-
-
-    button.textContent =
-      'الكاميرا تعمل...';
-
-
-  } catch(error) {
-
-
-    console.error(
-      'Camera error:',
-      error
-    );
-
-
-    scannerRunning = false;
-
-
-    button.disabled = false;
-
-    button.textContent =
-      'إعادة محاولة تشغيل الكاميرا';
-
-
-    document.getElementById(
-      'scannerOverlay'
-    ).style.display =
-      'none';
-
-
-    document.getElementById(
-      'placeholder'
-    ).style.display =
-      'flex';
-
-
-    showError(
-      'تعذر تشغيل الكاميرا. تأكد من السماح للموقع باستخدام الكاميرا ثم حاول مرة أخرى.'
-    );
-  }
-}
-
-
-
-/****************************************************
- * QR DETECTED
- ****************************************************/
-
-async function onScanSuccess(
-  decodedText
-) {
-
-
-  /*
-   * مهم جدًا:
-   *
-   * المكتبة قد تقرأ نفس QR عدة مرات
-   * خلال أجزاء من الثانية.
-   *
-   * لذلك أول قراءة فقط هي المقبولة.
-   */
-
-  if (processingQR) {
-
-    return;
-  }
-
-
-  processingQR = true;
-
-
-
-  const qrValue =
-    String(
-      decodedText || ''
-    ).trim();
-
-
-
-  if (!qrValue) {
-
-    processingQR = false;
-
-    return;
-  }
-
-
-
-  /*
-   * Feedback
-   */
-
-  try {
-
-    if (navigator.vibrate) {
-
-      navigator.vibrate(100);
-    }
-
-  } catch(error) {}
-
-
-
-  /*
-   * بمجرد قراءة أول QR
-   * نوقف الكاميرا بالكامل.
-   */
-
-  await stopScanner();
-
-
-
-  document.getElementById(
-    'scanButton'
-  ).style.display =
-    'none';
-
-
-
-  showLoading(
-    'تمت قراءة QR، جاري البحث عن المستفيد...'
-  );
-
-
-
-  /*
-   * البحث في Google Sheet
-   */
-
-  apiRequest(
-    'search',
-    qrValue,
-
-    function(response) {
-
-
-      hideLoading();
-
-      processingQR = false;
-
-
-
-      if (
-        !response ||
-        !response.success
-      ) {
-
-
-        showError(
-
-          response &&
-          response.message
-
-            ? response.message
-
-            : 'لم يتم العثور على المستفيد.'
-
-        );
-
-
-        showScanAgainButton();
-
-
-        return;
-      }
-
-
-
-      currentPerson =
-        response;
-
-
-      showPerson(
-        response
-      );
-
-    },
-
-
-    function(error) {
-
-
-      hideLoading();
-
-      processingQR = false;
-
-
-      console.error(error);
-
-
-      showError(
-        'تعذر الاتصال بقاعدة البيانات. تحقق من الإنترنت ثم حاول مرة أخرى.'
-      );
-
-
-      showScanAgainButton();
-
-    }
-
-  );
-}
-
-
-
-/****************************************************
- * STOP CAMERA
- ****************************************************/
-
-async function stopScanner() {
-
-
-  if (
-    qrScanner &&
-    scannerRunning
-  ) {
-
-
-    try {
-
-
-      await qrScanner.stop();
-
-
-    } catch(error) {
-
-
-      console.warn(
-        'Stop scanner:',
-        error
-      );
-    }
-  }
-
-
-
-  scannerRunning = false;
-
-
-
-  document.getElementById(
-    'scannerOverlay'
-  ).style.display =
-    'none';
-
-
-
-  document.getElementById(
-    'placeholder'
-  ).style.display =
-    'flex';
-
-
-
-  const button =
-    document.getElementById(
-      'scanButton'
-    );
-
-
-  button.disabled = false;
-}
-
-
-
-/****************************************************
- * JSONP API
- *
- * لا نستخدم fetch حتى لا ندخل
- * بمشكلة CORS مع Apps Script.
- ****************************************************/
-
-function apiRequest(
-  action,
-  id,
-  successCallback,
-  errorCallback
-) {
-
-
-  const callbackName =
-
-    'iacCallback_' +
-
-    Date.now() +
-
-    '_' +
-
-    Math.floor(
-      Math.random() * 100000
-    );
-
-
-
-  const script =
-    document.createElement(
-      'script'
-    );
-
-
-
-  let finished = false;
-
-
-
-  const cleanup =
-    function() {
-
-
-      if (script.parentNode) {
-
-        script.parentNode
-          .removeChild(script);
-      }
-
-
-      try {
-
-        delete window[
-          callbackName
-        ];
-
-      } catch(error) {
-
-        window[
-          callbackName
-        ] = undefined;
-      }
-    };
-
-
-
-  /*
-   * Timeout 15 seconds
-   */
-
-  const timeout =
-    setTimeout(
-      function() {
-
-
-        if (finished) {
-
-          return;
-        }
-
-
-        finished = true;
-
-
-        cleanup();
-
-
-        if (errorCallback) {
-
-          errorCallback(
-            new Error(
-              'Request timeout'
-            )
-          );
-        }
-
-
-      },
-      15000
-    );
-
-
-
-  window[
-    callbackName
-  ] =
-    function(data) {
-
-
-      if (finished) {
-
-        return;
-      }
-
-
-      finished = true;
-
-
-      clearTimeout(
-        timeout
-      );
-
-
-      cleanup();
-
-
-      if (successCallback) {
-
-        successCallback(
-          data
-        );
-      }
-    };
-
-
-
-  script.onerror =
-    function() {
-
-
-      if (finished) {
-
-        return;
-      }
-
-
-      finished = true;
-
-
-      clearTimeout(
-        timeout
-      );
-
-
-      cleanup();
-
-
-      if (errorCallback) {
-
-        errorCallback(
-          new Error(
-            'API connection failed'
-          )
-        );
-      }
-    };
-
-
-
-  const params =
-    new URLSearchParams({
-
-      action:
-        action,
-
-      id:
-        id,
-
-      callback:
-        callbackName,
-
-      _:Date.now()
-
-    });
-
-
-
-  script.src =
-
-    API_URL +
-
-    '?' +
-
-    params.toString();
-
-
-
-  document.body
-    .appendChild(
-      script
-    );
-}
-
-
-
-/****************************************************
- * SHOW PERSON
- ****************************************************/
-
-function showPerson(
-  person
-) {
-
-
-  hideError();
-
-
-
-  document.getElementById(
-    'personName'
-  ).textContent =
-    person.name;
-
-
-
-  document.getElementById(
-    'personId'
-  ).textContent =
-    person.id;
-
-
-
-  const actions =
-    document.getElementById(
-      'actions'
-    );
-
-
-
-  /*
-   * البطاقة مسلمة مسبقًا
-   */
-
-  if (
-    person.delivered
-  ) {
-
-
-    actions.innerHTML =
-
-      deliveredHTML(
-
-        'تم تسليم البطاقة لهذا المستفيد مسبقًا'
-
-      );
-
-
-  } else {
-
-
-    /*
-     * لم يتم التسليم
-     */
-
-    actions.innerHTML = `
-
-      <button
-
-        id="deliverButton"
-
-        class="btn btn-deliver"
-
-        onclick="deliverCard()"
-
-      >
-
-        ✓ &nbsp;
-
-        تسليم البطاقة
-
-      </button>
-
-    `;
-  }
-
-
-
-  document.getElementById(
-    'result'
-  ).style.display =
-    'block';
-
-
-
-  setTimeout(
-    function() {
-
-
-      document.getElementById(
-        'result'
-      ).scrollIntoView({
-
-        behavior:
-          'smooth',
-
-        block:
-          'start'
-
-      });
-
-
-    },
-    100
-  );
-}
-
-
-
-/****************************************************
- * DELIVER CARD
- ****************************************************/
-
-function deliverCard() {
-
-
-  if (
-    !currentPerson ||
-    processingQR
-  ) {
-
-    return;
-  }
-
-
-
-  processingQR = true;
-
-
-
-  const button =
-    document.getElementById(
-      'deliverButton'
-    );
-
-
-
-  if (button) {
-
-
-    button.disabled =
-      true;
-
-
-    button.textContent =
-      'جاري تسجيل التسليم...';
-  }
-
-
-
-  showLoading(
-    'جاري تسجيل عملية التسليم...'
-  );
-
-
-
-  apiRequest(
-
-    'deliver',
-
-    currentPerson.id,
-
-
-    function(response) {
-
-
-      hideLoading();
-
-
-      processingQR =
-        false;
-
-
-
-      if (
-        !response ||
-        !response.success
-      ) {
-
-
-        if (button) {
-
-
-          button.disabled =
-            false;
-
-
-          button.innerHTML =
-
-            '✓ &nbsp; تسليم البطاقة';
-        }
-
-
-
-        showToast(
-
-          response &&
-          response.message
-
-            ? response.message
-
-            : 'تعذر تسجيل التسليم.'
-
-        );
-
-
-        return;
-      }
-
-
-
-      currentPerson.delivered =
-        true;
-
-
-
-      document.getElementById(
-        'actions'
-      ).innerHTML =
-
-        deliveredHTML(
-
-          response.alreadyDelivered
-
-            ? 'كانت البطاقة مسلمة مسبقًا'
-
-            : 'تم تسجيل تسليم البطاقة بنجاح'
-
-        );
-
-
-
-      try {
-
-
-        if (
-          navigator.vibrate
-        ) {
-
-
-          navigator.vibrate(
-            [80,50,80]
-          );
-        }
-
-
-      } catch(error) {}
-
-
-
-      showToast(
-
-        response.alreadyDelivered
-
-          ? 'البطاقة مسلمة مسبقًا'
-
-          : '✓ تم تسليم البطاقة بنجاح'
-
-      );
-
-    },
-
-
-    function(error) {
-
-
-      hideLoading();
-
-
-      processingQR =
-        false;
-
-
-      console.error(error);
-
-
-
-      if (button) {
-
-
-        button.disabled =
-          false;
-
-
-        button.innerHTML =
-
-          '✓ &nbsp; تسليم البطاقة';
-      }
-
-
-
-      showToast(
-
-        'تعذر الاتصال بقاعدة البيانات.'
-
-      );
-
-    }
-
-  );
-}
-
-
-
-/****************************************************
- * DELIVERED HTML
- ****************************************************/
-
-function deliveredHTML(
-  description
-) {
-
-
-  return `
-
-    <div class="delivered">
-
-
-      <div class="delivered-icon">
-
-        ✓
-
-      </div>
-
-
-      <div>
-
-
-        <div class="delivered-title">
-
-          تم التسليم
-
-        </div>
-
-
-        <div class="delivered-description">
-
-          ${description}
-
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-  `;
-}
-
-
-
-/****************************************************
- * SCAN NEW CARD
- ****************************************************/
-
-function scanAnother() {
-
-
-  currentPerson =
-    null;
-
-
-  processingQR =
-    false;
-
-
-
-  hideResult();
-
-  hideError();
-
-
-
-  const button =
-    document.getElementById(
-      'scanButton'
-    );
-
-
-  button.style.display =
-    'block';
-
-
-  button.disabled =
-    false;
-
-
-  button.textContent =
-    'تشغيل الكاميرا ومسح QR';
-
-
-
-  window.scrollTo({
-
-    top:0,
-
-    behavior:
-      'smooth'
-
-  });
-
-
-  /*
-   * مهم:
-   *
-   * لا نشغل الكاميرا تلقائيًا.
-   *
-   * المستخدم هو الذي يضغط الزر
-   * كما طلبت.
-   */
-}
-
-
-
-/****************************************************
- * SHOW SCAN BUTTON AFTER ERROR
- ****************************************************/
-
-function showScanAgainButton() {
-
-
-  const button =
-    document.getElementById(
-      'scanButton'
-    );
-
-
-  button.style.display =
-    'block';
-
-
-  button.disabled =
-    false;
-
-
-  button.textContent =
-    'مسح QR من جديد';
-}
-
-
-
-/****************************************************
- * RESULT
- ****************************************************/
-
-function hideResult() {
-
-
-  document.getElementById(
-    'result'
-  ).style.display =
-    'none';
-}
-
-
-
-/****************************************************
- * ERROR
- ****************************************************/
-
-function showError(
-  message
-) {
-
-
-  document.getElementById(
-    'errorText'
-  ).textContent =
-    message;
-
-
-
-  document.getElementById(
-    'error'
-  ).style.display =
-    'block';
-}
-
-
-function hideError() {
-
-
-  document.getElementById(
-    'error'
-  ).style.display =
-    'none';
-}
-
-
-
-/****************************************************
- * LOADING
- ****************************************************/
-
-function showLoading(
-  message
-) {
-
-
-  document.getElementById(
-    'loadingText'
-  ).textContent =
-
-    message ||
-    'جاري المعالجة...';
-
-
-
-  document.getElementById(
-    'loading'
-  ).classList.add(
-    'active'
-  );
-}
-
-
-function hideLoading() {
-
-
-  document.getElementById(
-    'loading'
-  ).classList.remove(
-    'active'
-  );
-}
-
-
-
-/****************************************************
- * TOAST
- ****************************************************/
-
-function showToast(
-  message
-) {
-
-
-  const toast =
-    document.getElementById(
-      'toast'
-    );
-
-
-  toast.textContent =
-    message;
-
-
-  toast.classList.add(
-    'show'
-  );
-
-
-  clearTimeout(
-    toastTimer
-  );
-
-
-  toastTimer =
-    setTimeout(
-      function() {
-
-
-        toast.classList.remove(
-          'show'
-        );
-
-
-      },
-      3000
-    );
-}
-
-
-
-/****************************************************
- * STOP CAMERA IF USER LEAVES PAGE
- ****************************************************/
-
-window.addEventListener(
-
-  'pagehide',
-
-  function() {
-
-
-    if (
-      qrScanner &&
-      scannerRunning
-    ) {
-
-
-      try {
-
-        qrScanner.stop();
-
-      } catch(error) {}
-    }
-  }
-
-);
-
-</script>
-
-
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
-
 <meta charset="UTF-8">
 
 <meta
@@ -2900,13 +9,9 @@ window.addEventListener(
   content="width=device-width, initial-scale=1, viewport-fit=cover"
 >
 
-<meta
-  name="theme-color"
-  content="#005c32"
->
+<meta name="theme-color" content="#004d2a">
 
 <title>IAC | November Sham 2026</title>
-
 
 <script src="https://unpkg.com/html5-qrcode"></script>
 
@@ -2914,7 +19,6 @@ window.addEventListener(
   href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
   rel="stylesheet"
 >
-
 
 <style>
 
@@ -2933,6 +37,8 @@ window.addEventListener(
   --successSoft:#e9f8f0;
   --danger:#d83f3f;
   --dangerSoft:#fff0f0;
+  --warning:#a16b10;
+  --warningSoft:#fff7e5;
   --shadow:0 16px 40px rgba(0,65,35,.09);
 }
 
@@ -2941,15 +47,29 @@ window.addEventListener(
   -webkit-tap-highlight-color:transparent;
 }
 
-html,body{
+html,
+body{
   margin:0;
+  padding:0;
+  width:100%;
   min-height:100%;
   font-family:"Cairo",sans-serif;
   background:var(--bg);
   color:var(--text);
 }
 
-button,input,select{
+html{
+  overflow-x:hidden;
+}
+
+body{
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+button,
+input,
+select{
   font-family:inherit;
 }
 
@@ -2957,804 +77,1976 @@ button{
   cursor:pointer;
 }
 
-body{
-  display:flex;
-}
 
-
-/* ==============================
+/* =========================================================
    SIDEBAR
-============================== */
+========================================================= */
 
 .sidebar{
   position:fixed;
-  z-index:1000;
-  right:0;
+  z-index:2000;
+
   top:0;
+  right:0;
   bottom:0;
+
   width:270px;
+
   padding:24px 17px;
+
+  overflow-y:auto;
+
   color:white;
+
   background:
-    radial-gradient(circle at top right,rgba(255,255,255,.08),transparent 28%),
-    linear-gradient(180deg,var(--dark),var(--deep));
-  box-shadow:-10px 0 35px rgba(0,40,22,.10);
+    radial-gradient(
+      circle at top right,
+      rgba(255,255,255,.08),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      var(--dark),
+      var(--deep)
+    );
+
+  box-shadow:
+    -10px 0 35px
+    rgba(0,40,22,.10);
 }
+
 
 .brand{
   display:flex;
   align-items:center;
   gap:12px;
-  padding:5px 8px 25px;
-  border-bottom:1px solid rgba(255,255,255,.09);
+
+  padding:
+    5px
+    8px
+    25px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.09);
 }
+
 
 .logo{
   width:53px;
   height:53px;
+
   flex:0 0 53px;
+
   display:flex;
   align-items:center;
   justify-content:center;
-  border:2px solid rgba(255,255,255,.9);
+
+  border:
+    2px solid
+    rgba(255,255,255,.9);
+
   border-radius:50%;
+
   font-size:17px;
   font-weight:800;
 }
+
 
 .brand-name{
   font-size:14px;
   font-weight:800;
 }
 
+
 .brand-en{
   direction:ltr;
+
   margin-top:2px;
+
   font-size:7px;
+
   opacity:.55;
 }
 
+
 .campaign{
-  margin:18px 7px;
-  padding:10px 12px;
+  margin:
+    18px
+    7px;
+
+  padding:
+    10px
+    12px;
+
   border-radius:12px;
-  background:rgba(255,255,255,.07);
+
+  background:
+    rgba(255,255,255,.07);
+
   font-size:10px;
+
   text-align:center;
-  color:rgba(255,255,255,.75);
+
+  color:
+    rgba(255,255,255,.75);
 }
+
 
 .nav{
   margin-top:18px;
 }
 
+
 .nav-btn{
   width:100%;
+
   display:flex;
   align-items:center;
   gap:12px;
+
   margin-bottom:7px;
-  padding:13px 14px;
+
+  padding:
+    12px
+    13px;
+
   border:0;
   border-radius:13px;
-  color:rgba(255,255,255,.68);
-  background:transparent;
+
+  color:
+    rgba(255,255,255,.68);
+
+  background:
+    transparent;
+
   text-align:right;
-  font-size:12px;
+
+  font-size:11px;
   font-weight:700;
+
   transition:.2s;
 }
 
+
 .nav-btn:hover{
-  background:rgba(255,255,255,.06);
   color:white;
+
+  background:
+    rgba(255,255,255,.06);
 }
+
 
 .nav-btn.active{
   color:white;
-  background:linear-gradient(135deg,var(--green),var(--green2));
-  box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--green),
+      var(--green2)
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(0,0,0,.15);
 }
 
+
 .nav-icon{
-  width:30px;
-  height:30px;
+  width:31px;
+  height:31px;
+
+  flex:0 0 31px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   border-radius:9px;
-  background:rgba(255,255,255,.10);
+
+  background:
+    rgba(255,255,255,.10);
+
   font-size:15px;
 }
 
+
 .sidebar-footer{
-  position:absolute;
-  right:20px;
-  left:20px;
-  bottom:20px;
-  color:rgba(255,255,255,.35);
+  margin-top:35px;
+
+  color:
+    rgba(255,255,255,.32);
+
   font-size:8px;
+
   text-align:center;
 }
 
 
-/* ==============================
-   MOBILE TOP BAR
-============================== */
+/* =========================================================
+   SIDEBAR OVERLAY
+========================================================= */
+
+.sidebar-overlay{
+  display:none;
+
+  position:fixed;
+
+  z-index:1900;
+
+  inset:0;
+
+  background:
+    rgba(0,25,14,.58);
+
+  backdrop-filter:
+    blur(3px);
+}
+
+
+.sidebar-overlay.show{
+  display:block;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main{
+  width:
+    calc(100% - 270px);
+
+  min-height:100vh;
+
+  margin-right:270px;
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+========================================================= */
 
 .mobile-header{
   display:none;
 }
 
 
-/* ==============================
-   MAIN
-============================== */
-
-.main{
-  width:calc(100% - 270px);
-  margin-right:270px;
-  min-height:100vh;
-}
+/* =========================================================
+   TOP BAR
+========================================================= */
 
 .topbar{
-  height:82px;
-  padding:0 35px;
+  min-height:82px;
+
+  padding:
+    15px
+    35px;
+
   display:flex;
   align-items:center;
   justify-content:space-between;
-  border-bottom:1px solid var(--border);
-  background:rgba(255,255,255,.88);
-  backdrop-filter:blur(10px);
+
+  border-bottom:
+    1px solid
+    var(--border);
+
+  background:
+    rgba(255,255,255,.91);
+
+  backdrop-filter:
+    blur(10px);
 }
+
 
 .page-title{
   font-size:20px;
   font-weight:800;
 }
 
+
 .page-subtitle{
   margin-top:2px;
-  color:var(--muted);
+
+  color:
+    var(--muted);
+
   font-size:10px;
 }
+
 
 .status{
   display:flex;
   align-items:center;
   gap:7px;
-  padding:8px 12px;
+
+  padding:
+    8px
+    12px;
+
   border-radius:30px;
-  color:var(--success);
-  background:var(--successSoft);
+
+  color:
+    var(--success);
+
+  background:
+    var(--successSoft);
+
   font-size:9px;
   font-weight:800;
 }
 
+
 .status-dot{
   width:7px;
   height:7px;
+
   border-radius:50%;
-  background:var(--success);
+
+  background:
+    var(--success);
 }
+
+
+/* =========================================================
+   CONTENT / VIEWS
+========================================================= */
 
 .content{
-  width:min(1100px,calc(100% - 50px));
-  margin:0 auto;
-  padding:35px 0 60px;
+  width:
+    min(
+      1100px,
+      calc(100% - 50px)
+    );
+
+  margin:
+    0 auto;
+
+  padding:
+    35px
+    0
+    60px;
 }
+
+
+/*
+  مهم جداً:
+  أي قسم غير فعال يختفي بالكامل.
+*/
 
 .view{
-  display:none;
+  display:none !important;
+
+  width:100%;
 }
+
 
 .view.active{
-  display:block;
+  display:block !important;
 }
 
 
-/* ==============================
+/* =========================================================
    HOME
-============================== */
+========================================================= */
 
 .hero{
   position:relative;
+
   overflow:hidden;
+
+  width:100%;
+
   padding:32px;
+
   border-radius:24px;
+
   color:white;
-  background:linear-gradient(135deg,var(--dark),var(--green));
-  box-shadow:var(--shadow);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--dark),
+      var(--green)
+    );
+
+  box-shadow:
+    var(--shadow);
 }
 
-.hero:after{
+
+.hero::after{
   content:"";
+
   position:absolute;
+
   width:250px;
   height:250px;
+
   left:-80px;
   top:-110px;
-  border:1px solid rgba(255,255,255,.12);
+
+  border:
+    1px solid
+    rgba(255,255,255,.12);
+
   border-radius:50%;
 }
 
+
+.hero::before{
+  content:"";
+
+  position:absolute;
+
+  width:150px;
+  height:150px;
+
+  right:-60px;
+  bottom:-70px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  border-radius:50%;
+}
+
+
 .hero-small{
+  position:relative;
+  z-index:2;
+
   font-size:10px;
+
   opacity:.65;
 }
 
+
 .hero-title{
+  position:relative;
+  z-index:2;
+
   margin-top:7px;
+
   font-size:28px;
   font-weight:800;
 }
 
+
 .hero-text{
+  position:relative;
+  z-index:2;
+
   max-width:600px;
+
   margin-top:8px;
-  color:rgba(255,255,255,.68);
+
+  color:
+    rgba(255,255,255,.68);
+
   font-size:11px;
+
   line-height:2;
 }
 
+
 .cards{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+
+  grid-template-columns:
+    repeat(3,1fr);
+
   gap:18px;
+
   margin-top:25px;
 }
 
+
 .home-card{
   position:relative;
+
   overflow:hidden;
-  padding:24px;
+
+  min-width:0;
   min-height:210px;
-  border:1px solid var(--border);
+
+  padding:24px;
+
+  border:
+    1px solid
+    var(--border);
+
   border-radius:21px;
+
   background:white;
-  box-shadow:var(--shadow);
+
+  box-shadow:
+    var(--shadow);
+
   transition:.2s;
 }
 
+
 .home-card:hover{
-  transform:translateY(-3px);
+  transform:
+    translateY(-3px);
 }
+
 
 .card-icon{
   width:55px;
   height:55px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   border-radius:16px;
+
   color:white;
-  background:linear-gradient(135deg,var(--dark),var(--green2));
-  font-size:24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--dark),
+      var(--green2)
+    );
+
+  font-size:22px;
+  font-weight:800;
 }
 
+
 .home-card h3{
-  margin:17px 0 5px;
+  margin:
+    17px
+    0
+    5px;
+
   font-size:16px;
 }
 
+
 .home-card p{
   margin:0;
+
   min-height:42px;
-  color:var(--muted);
+
+  color:
+    var(--muted);
+
   font-size:10px;
+
   line-height:1.9;
 }
 
+
 .card-link{
   margin-top:17px;
-  border:0;
+
   padding:0;
-  color:var(--green);
-  background:transparent;
+
+  border:0;
+
+  color:
+    var(--green);
+
+  background:
+    transparent;
+
   font-size:10px;
   font-weight:800;
 }
 
 
-/* ==============================
-   SECTION
-============================== */
+/* =========================================================
+   SECTION BOX
+========================================================= */
 
 .section-box{
+  width:100%;
+
   padding:25px;
-  border:1px solid var(--border);
+
+  border:
+    1px solid
+    var(--border);
+
   border-radius:23px;
+
   background:white;
-  box-shadow:var(--shadow);
+
+  box-shadow:
+    var(--shadow);
 }
+
 
 .section-head{
   margin-bottom:22px;
 }
+
 
 .section-title{
   font-size:20px;
   font-weight:800;
 }
 
+
 .section-desc{
   margin-top:4px;
-  color:var(--muted);
+
+  color:
+    var(--muted);
+
   font-size:10px;
+
+  line-height:1.8;
 }
 
 
-/* ==============================
+/* =========================================================
    INPUTS
-============================== */
+========================================================= */
 
 .manual-box{
+  width:100%;
+
   display:flex;
+
   gap:10px;
+
   margin-bottom:18px;
 }
 
+
 .input{
   width:100%;
+
+  min-width:0;
+
   height:51px;
-  padding:0 15px;
+
+  padding:
+    0
+    15px;
+
   outline:0;
-  border:1px solid var(--border);
+
+  border:
+    1px solid
+    var(--border);
+
   border-radius:13px;
+
   background:#fafcfb;
-  color:var(--text);
+
+  color:
+    var(--text);
+
   font-size:12px;
+
   transition:.2s;
 }
 
+
 .input:focus{
-  border-color:var(--green);
-  box-shadow:0 0 0 3px rgba(0,104,56,.08);
+  border-color:
+    var(--green);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0,104,56,.08);
 }
+
 
 .manual-box .input{
   flex:1;
 }
 
+
 .btn{
   border:0;
-  padding:14px 20px;
+
+  padding:
+    14px
+    20px;
+
   border-radius:13px;
+
   font-size:11px;
   font-weight:800;
+
+  transition:
+    transform .15s,
+    opacity .15s;
 }
+
+
+.btn:active{
+  transform:
+    scale(.985);
+}
+
+
+.btn:disabled{
+  cursor:not-allowed;
+
+  opacity:.55;
+}
+
 
 .btn-primary{
   color:white;
-  background:linear-gradient(135deg,var(--dark),var(--green));
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--dark),
+      var(--green)
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(0,104,56,.14);
 }
 
+
 .btn-soft{
-  color:var(--green);
-  background:var(--soft);
+  color:
+    var(--green);
+
+  background:
+    var(--soft);
 }
+
 
 .btn-deliver{
   width:100%;
+
   color:white;
-  background:linear-gradient(135deg,var(--green),var(--green2));
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--green),
+      var(--green2)
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(0,104,56,.16);
 }
 
 
-/* ==============================
+/* =========================================================
    SCANNER
-============================== */
+========================================================= */
 
 .scanner{
   position:relative;
+
   overflow:hidden;
+
+  width:100%;
+
   min-height:320px;
+
   border-radius:20px;
+
   background:#06150e;
 }
 
+
 .reader{
   width:100%;
+
   min-height:320px;
+
+  background:#06150e;
 }
+
 
 .reader video{
-  width:100%!important;
-  min-height:320px!important;
-  object-fit:cover!important;
+  width:100% !important;
+
+  min-height:320px !important;
+
+  object-fit:cover !important;
 }
 
-.reader img,
-.reader [id$="__dashboard"]{
-  display:none!important;
+
+.reader img{
+  display:none !important;
 }
+
+
+.reader [id$="__dashboard"]{
+  display:none !important;
+}
+
+
+.reader [id$="__scan_region"]{
+  background:
+    transparent !important;
+}
+
 
 .scanner-placeholder{
   position:absolute;
+
+  z-index:5;
+
   inset:0;
-  z-index:2;
+
+  width:100%;
+
   display:flex;
   flex-direction:column;
+
   align-items:center;
   justify-content:center;
+
+  padding:20px;
+
   color:white;
-  background:radial-gradient(circle,#0c2619,#06150e 70%);
+
+  text-align:center;
+
+  background:
+    radial-gradient(
+      circle,
+      #0c2619,
+      #06150e 70%
+    );
 }
+
 
 .scan-symbol{
   width:68px;
   height:68px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   margin-bottom:13px;
+
   border-radius:19px;
-  background:rgba(255,255,255,.08);
-  font-size:28px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  font-size:27px;
 }
+
 
 .scan-title{
   font-size:13px;
   font-weight:800;
 }
 
+
 .scan-desc{
-  margin-top:4px;
-  color:rgba(255,255,255,.48);
+  margin-top:5px;
+
+  color:
+    rgba(255,255,255,.48);
+
   font-size:9px;
 }
 
+
 .scanner-btn{
   width:100%;
+
   margin-top:13px;
 }
 
 
-/* ==============================
+/* =========================================================
    PERSON RESULT
-============================== */
+========================================================= */
 
 .person-result{
   display:none;
+
+  width:100%;
+
   margin-top:18px;
+
   overflow:hidden;
-  border:1px solid var(--border);
+
+  border:
+    1px solid
+    var(--border);
+
   border-radius:18px;
+
+  background:white;
 }
+
 
 .person-main{
   padding:20px;
-  background:linear-gradient(135deg,#f3fbf7,#fff);
+
+  background:
+    linear-gradient(
+      135deg,
+      #f3fbf7,
+      #fff
+    );
 }
 
+
 .person-label{
-  color:var(--muted);
+  color:
+    var(--muted);
+
   font-size:9px;
 }
 
+
 .person-name{
   margin-top:3px;
+
   font-size:21px;
   font-weight:800;
 }
 
+
 .person-id{
   display:inline-block;
+
   direction:ltr;
+
   margin-top:9px;
-  padding:6px 10px;
+
+  padding:
+    6px
+    10px;
+
   border-radius:8px;
-  color:var(--green);
-  background:var(--soft);
+
+  color:
+    var(--green);
+
+  background:
+    var(--soft);
+
   font-size:10px;
   font-weight:800;
 }
 
+
 .person-action{
   padding:16px;
-  border-top:1px solid var(--border);
+
+  border-top:
+    1px solid
+    var(--border);
 }
+
 
 .delivered{
   display:flex;
+
   align-items:center;
+
   gap:10px;
+
   padding:13px;
-  border:1px solid #bce7ce;
+
+  border:
+    1px solid
+    #bce7ce;
+
   border-radius:12px;
-  color:var(--success);
-  background:var(--successSoft);
+
+  color:
+    var(--success);
+
+  background:
+    var(--successSoft);
+
   font-size:11px;
   font-weight:800;
 }
 
 
-/* ==============================
+/* =========================================================
    SEARCH
-============================== */
+========================================================= */
 
 .search-controls{
   display:grid;
-  grid-template-columns:170px 1fr auto;
+
+  grid-template-columns:
+    170px
+    1fr
+    auto;
+
   gap:10px;
 }
 
+
 .search-or{
-  margin:15px 0;
+  margin:
+    15px
+    0;
+
   display:flex;
+
   align-items:center;
+
   gap:12px;
-  color:var(--muted);
+
+  color:
+    var(--muted);
+
   font-size:9px;
 }
 
-.search-or:before,
-.search-or:after{
+
+.search-or::before,
+.search-or::after{
   content:"";
+
   height:1px;
+
   flex:1;
-  background:var(--border);
+
+  background:
+    var(--border);
 }
 
+
 .search-results{
+  width:100%;
+
   margin-top:22px;
 }
 
+
 .result-count{
   margin-bottom:12px;
-  color:var(--muted);
+
+  color:
+    var(--muted);
+
   font-size:10px;
 }
 
+
 .result-card{
+  width:100%;
+
   margin-bottom:12px;
+
   padding:18px;
-  border:1px solid var(--border);
+
+  border:
+    1px solid
+    var(--border);
+
   border-radius:17px;
+
   background:#fff;
 }
 
+
 .result-top{
   display:flex;
-  justify-content:space-between;
+
+  justify-content:
+    space-between;
+
   gap:15px;
+
   margin-bottom:15px;
 }
+
 
 .result-name{
   font-size:15px;
   font-weight:800;
 }
 
+
 .result-id{
   direction:ltr;
-  color:var(--green);
+
+  color:
+    var(--green);
+
   font-size:11px;
   font-weight:800;
 }
 
+
 .info-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+
+  grid-template-columns:
+    repeat(3,1fr);
+
   gap:10px;
 }
 
+
 .info-item{
+  min-width:0;
+
   padding:11px;
+
   border-radius:10px;
+
   background:#f6f9f7;
 }
 
+
 .info-label{
-  color:var(--muted);
+  color:
+    var(--muted);
+
   font-size:8px;
 }
 
+
 .info-value{
   margin-top:3px;
+
+  overflow-wrap:anywhere;
+
   font-size:10px;
   font-weight:700;
 }
 
+
 .delivery-statuses{
   display:flex;
+
+  flex-wrap:wrap;
+
   gap:8px;
+
   margin-top:12px;
 }
 
+
 .badge{
-  padding:7px 10px;
+  padding:
+    7px
+    10px;
+
   border-radius:30px;
+
   font-size:8px;
   font-weight:800;
 }
 
+
 .badge.yes{
-  color:var(--success);
-  background:var(--successSoft);
+  color:
+    var(--success);
+
+  background:
+    var(--successSoft);
 }
+
 
 .badge.no{
-  color:#a16b10;
-  background:#fff7e5;
+  color:
+    var(--warning);
+
+  background:
+    var(--warningSoft);
 }
 
 
-/* ==============================
-   ALERT + LOADING
-============================== */
+/* =========================================================
+   ALERT
+========================================================= */
 
 .alert{
   display:none;
+
+  width:100%;
+
   margin-top:15px;
+
   padding:13px;
+
   border-radius:12px;
-  color:var(--danger);
-  background:var(--dangerSoft);
+
+  color:
+    var(--danger);
+
+  background:
+    var(--dangerSoft);
+
   font-size:10px;
+
+  line-height:1.8;
+
   text-align:center;
 }
 
+
+/* =========================================================
+   LOADING
+========================================================= */
+
 .loading{
   display:none;
+
   position:fixed;
+
   z-index:9999;
+
   inset:0;
+
   align-items:center;
   justify-content:center;
-  background:rgba(0,38,21,.70);
-  backdrop-filter:blur(6px);
+
+  padding:20px;
+
+  background:
+    rgba(0,38,21,.70);
+
+  backdrop-filter:
+    blur(6px);
 }
+
 
 .loading.active{
   display:flex;
 }
 
+
 .loading-box{
   min-width:190px;
+
   padding:25px;
+
   border-radius:20px;
+
   background:white;
+
   text-align:center;
+
+  box-shadow:
+    0 25px 60px
+    rgba(0,0,0,.18);
 }
+
 
 .spinner{
   width:40px;
   height:40px;
-  margin:0 auto 12px;
-  border:4px solid #e6eee9;
-  border-top-color:var(--green);
+
+  margin:
+    0 auto
+    12px;
+
+  border:
+    4px solid
+    #e6eee9;
+
+  border-top-color:
+    var(--green);
+
   border-radius:50%;
-  animation:spin .7s linear infinite;
+
+  animation:
+    spin .7s
+    linear
+    infinite;
 }
+
 
 @keyframes spin{
-  to{transform:rotate(360deg)}
+  to{
+    transform:
+      rotate(360deg);
+  }
 }
 
+
 .loading-text{
-  color:var(--green);
+  color:
+    var(--green);
+
   font-size:10px;
   font-weight:800;
 }
 
+
+/* =========================================================
+   TOAST
+========================================================= */
+
 .toast{
   position:fixed;
+
   z-index:10000;
+
   left:50%;
-  bottom:25px;
-  width:calc(100% - 35px);
+
+  bottom:
+    calc(
+      25px +
+      env(safe-area-inset-bottom)
+    );
+
+  width:
+    calc(100% - 35px);
+
   max-width:400px;
+
   padding:13px;
-  transform:translate(-50%,100px);
+
+  transform:
+    translate(-50%,100px);
+
   opacity:0;
+
   border-radius:13px;
+
   color:white;
+
   background:#10251a;
+
   text-align:center;
+
   font-size:10px;
+
+  box-shadow:
+    0 15px 35px
+    rgba(0,0,0,.2);
+
   transition:.3s;
 }
 
+
 .toast.show{
-  transform:translate(-50%,0);
+  transform:
+    translate(-50%,0);
+
   opacity:1;
 }
 
 
-/* ==============================
-   MOBILE
-============================== */
+/* =========================================================
+   DESKTOP
+========================================================= */
 
-@media(max-width:850px){
+@media(min-width:851px){
 
   .sidebar{
-    width:270px;
-    transform:translateX(100%);
-    transition:.25s;
-  }
-
-  .sidebar.open{
-    transform:translateX(0);
+    transform:none !important;
   }
 
   .mobile-header{
-    position:sticky;
-    z-index:900;
-    top:0;
-    height:64px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 15px;
-    color:white;
-    background:var(--dark);
+    display:none !important;
   }
 
-  .menu-btn{
-    width:39px;
-    height:39px;
-    border:0;
-    border-radius:10px;
-    color:white;
-    background:rgba(255,255,255,.10);
-    font-size:19px;
+  .sidebar-overlay{
+    display:none !important;
   }
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media(max-width:850px){
+
+  html,
+  body{
+    width:100%;
+
+    overflow-x:hidden;
+  }
+
+
+  body{
+    display:block;
+  }
+
+
+  /* MOBILE HEADER */
+
+  .mobile-header{
+    position:sticky;
+
+    z-index:1800;
+
+    top:0;
+
+    width:100%;
+
+    min-height:
+      calc(
+        62px +
+        env(safe-area-inset-top)
+      );
+
+    display:flex;
+
+    align-items:flex-end;
+
+    justify-content:
+      space-between;
+
+    gap:12px;
+
+    padding:
+      calc(
+        10px +
+        env(safe-area-inset-top)
+      )
+      14px
+      10px;
+
+    color:white;
+
+    background:
+      linear-gradient(
+        135deg,
+        #003b21,
+        #006838
+      );
+
+    box-shadow:
+      0 4px 18px
+      rgba(0,40,22,.15);
+  }
+
 
   .mobile-brand{
-    font-size:12px;
+    min-width:0;
+
+    flex:1;
+
+    direction:ltr;
+
+    text-align:left;
+
+    font-size:11px;
     font-weight:800;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
   }
+
+
+  /* MENU BUTTON */
+
+  .menu-btn{
+    position:relative;
+
+    width:42px;
+    height:42px;
+
+    flex:
+      0 0 42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:0;
+
+    border:0;
+
+    border-radius:12px;
+
+    color:white;
+
+    background:
+      rgba(255,255,255,.12);
+  }
+
+
+  .menu-btn::before,
+  .menu-btn::after,
+  .menu-btn span{
+    content:"";
+
+    position:absolute;
+
+    width:20px;
+    height:2px;
+
+    border-radius:5px;
+
+    background:white;
+
+    transition:.25s;
+  }
+
+
+  .menu-btn::before{
+    transform:
+      translateY(-6px);
+  }
+
+
+  .menu-btn::after{
+    transform:
+      translateY(6px);
+  }
+
+
+  .menu-btn span{
+    transform:
+      translateY(0);
+  }
+
+
+  .menu-btn.open::before{
+    transform:
+      rotate(45deg);
+  }
+
+
+  .menu-btn.open::after{
+    transform:
+      rotate(-45deg);
+  }
+
+
+  .menu-btn.open span{
+    opacity:0;
+  }
+
+
+  /* DRAWER SIDEBAR */
+
+  .sidebar{
+    position:fixed;
+
+    z-index:2000;
+
+    top:0;
+    right:0;
+    bottom:0;
+
+    width:
+      min(
+        82vw,
+        300px
+      );
+
+    height:100dvh;
+
+    padding:
+      calc(
+        22px +
+        env(safe-area-inset-top)
+      )
+      16px
+      calc(
+        20px +
+        env(safe-area-inset-bottom)
+      );
+
+    overflow-y:auto;
+
+    transform:
+      translateX(105%);
+
+    transition:
+      transform .28s
+      cubic-bezier(
+        .4,
+        0,
+        .2,
+        1
+      );
+
+    box-shadow:
+      -20px 0 50px
+      rgba(0,0,0,.22);
+  }
+
+
+  .sidebar.open{
+    transform:
+      translateX(0);
+  }
+
+
+  /* MAIN */
 
   .main{
     width:100%;
-    margin:0;
+
+    min-width:0;
+
+    margin:0 !important;
+
+    padding:0;
+
+    overflow:hidden;
   }
 
+
   .topbar{
-    height:auto;
-    padding:20px 16px;
+    width:100%;
+
+    min-height:auto;
+
+    padding:
+      18px
+      15px;
+
+    background:white;
   }
+
+
+  .page-title{
+    font-size:19px;
+  }
+
+
+  .page-subtitle{
+    margin-top:3px;
+
+    font-size:9px;
+
+    line-height:1.7;
+  }
+
 
   .status{
     display:none;
   }
 
+
   .content{
-    width:calc(100% - 24px);
-    padding:20px 0 45px;
+    width:100%;
+
+    margin:0;
+
+    padding:
+      18px
+      12px
+      45px;
   }
 
-  .cards{
-    grid-template-columns:1fr;
+
+  /* VIEWS */
+
+  .view{
+    display:none !important;
+
+    width:100%;
+
+    margin:0;
+
+    padding:0;
   }
+
+
+  .view.active{
+    display:block !important;
+  }
+
+
+  /* HOME */
 
   .hero{
-    padding:24px;
+    width:100%;
+
+    padding:
+      24px
+      20px;
+
+    border-radius:20px;
   }
+
+
+  .hero-small{
+    font-size:8px;
+  }
+
 
   .hero-title{
-    font-size:21px;
+    margin-top:6px;
+
+    font-size:22px;
+
+    line-height:1.5;
   }
 
-  .search-controls{
-    grid-template-columns:1fr;
+
+  .hero-text{
+    margin-top:7px;
+
+    font-size:10px;
+
+    line-height:1.9;
   }
 
-  .info-grid{
-    grid-template-columns:1fr;
+
+  .cards{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+      1fr;
+
+    gap:12px;
+
+    margin-top:15px;
   }
+
+
+  .home-card{
+    width:100%;
+
+    min-width:0;
+
+    min-height:auto;
+
+    padding:18px;
+
+    border-radius:18px;
+  }
+
+
+  .card-icon{
+    width:48px;
+    height:48px;
+
+    border-radius:14px;
+
+    font-size:19px;
+  }
+
+
+  .home-card h3{
+    margin:
+      13px
+      0
+      4px;
+
+    font-size:15px;
+  }
+
+
+  .home-card p{
+    min-height:auto;
+
+    font-size:9px;
+  }
+
+
+  /* SECTIONS */
+
+  .section-box{
+    width:100%;
+
+    padding:16px;
+
+    border-radius:19px;
+  }
+
+
+  .section-head{
+    margin-bottom:16px;
+  }
+
+
+  .section-title{
+    font-size:18px;
+  }
+
+
+  .section-desc{
+    font-size:9px;
+
+    line-height:1.8;
+  }
+
+
+  /* INPUTS */
 
   .manual-box{
-    flex-direction:column;
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:9px;
   }
+
+
+  .input{
+    width:100%;
+
+    min-width:0;
+
+    height:50px;
+  }
+
+
+  .manual-box .btn{
+    width:100%;
+  }
+
+
+  /* SCANNER */
 
   .scanner{
-    min-height:290px;
+    width:100%;
+
+    min-height:280px;
+
+    border-radius:17px;
   }
 
+
   .reader{
-    min-height:290px;
+    width:100%;
+
+    min-height:280px;
+  }
+
+
+  .reader video{
+    width:100% !important;
+
+    height:280px !important;
+
+    min-height:280px !important;
+
+    object-fit:cover !important;
+  }
+
+
+  .scanner-placeholder{
+    width:100%;
+  }
+
+
+  .scanner-btn{
+    width:100%;
+  }
+
+
+  /* PERSON */
+
+  .person-result{
+    width:100%;
+  }
+
+
+  .person-name{
+    font-size:18px;
+  }
+
+
+  /* SEARCH */
+
+  .search-controls{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+      1fr;
+
+    gap:9px;
+  }
+
+
+  .search-controls .btn{
+    width:100%;
+  }
+
+
+  .result-card{
+    width:100%;
+
+    padding:15px;
+  }
+
+
+  .result-top{
+    flex-direction:column;
+
+    gap:5px;
+  }
+
+
+  .info-grid{
+    grid-template-columns:
+      1fr;
+
+    gap:7px;
+  }
+
+
+  .delivery-statuses{
+    flex-direction:column;
+
+    align-items:stretch;
+  }
+
+
+  .badge{
+    width:100%;
+
+    text-align:center;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media(max-width:380px){
+
+  .content{
+    padding-left:9px;
+    padding-right:9px;
+  }
+
+
+  .section-box{
+    padding:13px;
+  }
+
+
+  .hero{
+    padding:
+      20px
+      17px;
+  }
+
+
+  .scanner,
+  .reader{
+    min-height:255px;
+  }
+
+
+  .reader video{
+    height:255px !important;
+
+    min-height:255px !important;
   }
 }
 
@@ -3765,14 +2057,36 @@ body{
 <body>
 
 
-<!-- SIDEBAR -->
+<!-- ======================================================
+     OVERLAY
+======================================================= -->
 
-<aside id="sidebar" class="sidebar">
+<div
+  id="sidebarOverlay"
+  class="sidebar-overlay"
+  onclick="closeSidebar()"
+></div>
+
+
+
+<!-- ======================================================
+     SIDEBAR
+======================================================= -->
+
+<aside
+  id="sidebar"
+  class="sidebar"
+>
 
   <div class="brand">
-    <div class="logo">IAC</div>
+
+    <div class="logo">
+      IAC
+    </div>
+
 
     <div>
+
       <div class="brand-name">
         مؤسسة الإغاثة الدولية
       </div>
@@ -3780,8 +2094,11 @@ body{
       <div class="brand-en">
         INTERNATIONAL AID CAMPAIGN
       </div>
+
     </div>
+
   </div>
+
 
   <div class="campaign">
     November Sham 2026
@@ -3790,80 +2107,124 @@ body{
 
   <nav class="nav">
 
+
     <button
       class="nav-btn active"
       data-view="home"
-      onclick="navigate('home',this)"
+      onclick="navigate('home')"
     >
-      <span class="nav-icon">⌂</span>
+
+      <span class="nav-icon">
+        ⌂
+      </span>
+
       الرئيسية
+
     </button>
 
 
     <button
       class="nav-btn"
       data-view="card"
-      onclick="navigate('card',this)"
+      onclick="navigate('card')"
     >
-      <span class="nav-icon">▣</span>
+
+      <span class="nav-icon">
+        ▣
+      </span>
+
       تسليم البطاقات
+
     </button>
 
 
     <button
       class="nav-btn"
       data-view="basket"
-      onclick="navigate('basket',this)"
+      onclick="navigate('basket')"
     >
-      <span class="nav-icon">▤</span>
+
+      <span class="nav-icon">
+        ▤
+      </span>
+
       تسليم السلة
+
     </button>
 
 
     <button
       class="nav-btn"
       data-view="search"
-      onclick="navigate('search',this)"
+      onclick="navigate('search')"
     >
-      <span class="nav-icon">⌕</span>
+
+      <span class="nav-icon">
+        ⌕
+      </span>
+
       البحث عن مستفيد
+
     </button>
+
 
   </nav>
 
 
   <div class="sidebar-footer">
+
     IAC Distribution Management System
+
+    <br>
+
+    November Sham 2026
+
   </div>
 
 </aside>
 
 
+
+<!-- ======================================================
+     MAIN
+======================================================= -->
+
 <div class="main">
+
 
   <!-- MOBILE HEADER -->
 
   <div class="mobile-header">
 
+
     <div class="mobile-brand">
       IAC • November Sham 2026
     </div>
 
+
     <button
+      id="menuButton"
       class="menu-btn"
       onclick="toggleSidebar()"
+      aria-label="فتح القائمة"
     >
-      ☰
+
+      <span></span>
+
     </button>
+
 
   </div>
 
 
-  <!-- TOPBAR -->
+
+  <!-- TOP BAR -->
 
   <header class="topbar">
 
+
     <div>
+
       <div
         id="pageTitle"
         class="page-title"
@@ -3871,68 +2232,96 @@ body{
         الرئيسية
       </div>
 
+
       <div
         id="pageSubtitle"
         class="page-subtitle"
       >
         نظام إدارة عمليات التوزيع
       </div>
+
     </div>
 
 
     <div class="status">
+
       <span class="status-dot"></span>
+
       النظام متصل
+
     </div>
+
 
   </header>
 
 
+
+  <!-- CONTENT -->
+
   <main class="content">
 
 
-    <!-- ===========================
+    <!-- ==================================================
          HOME
-    ============================ -->
+    =================================================== -->
 
     <section
       id="view-home"
       class="view active"
     >
 
+
       <div class="hero">
+
 
         <div class="hero-small">
           INTERNATIONAL AID CAMPAIGN
         </div>
 
+
         <div class="hero-title">
           November Sham 2026
         </div>
 
+
         <div class="hero-text">
+
           نظام مركزي للتحقق من المستفيدين وإدارة
-          عمليات تسليم البطاقات والسلال والبحث في
-          بيانات المستفيدين.
+          عمليات تسليم البطاقات والسلال والبحث
+          في بيانات المستفيدين.
+
         </div>
+
 
       </div>
 
 
+
       <div class="cards">
+
+
+        <!-- CARD DELIVERY -->
 
         <div class="home-card">
 
-          <div class="card-icon">▣</div>
+
+          <div class="card-icon">
+            ▣
+          </div>
+
 
           <h3>
             تسليم البطاقات
           </h3>
 
+
           <p>
-            قراءة رمز QR والتحقق من المستفيد
-            وتسجيل عملية تسليم البطاقة.
+
+            قراءة رمز QR والتحقق من بيانات
+            المستفيد وتسجيل عملية تسليم البطاقة.
+
           </p>
+
 
           <button
             class="card-link"
@@ -3941,21 +2330,33 @@ body{
             فتح القسم ←
           </button>
 
+
         </div>
 
 
+
+        <!-- BASKET DELIVERY -->
+
         <div class="home-card">
 
-          <div class="card-icon">▤</div>
+
+          <div class="card-icon">
+            ▤
+          </div>
+
 
           <h3>
             تسليم السلة
           </h3>
 
+
           <p>
-            البحث بواسطة ID أو قراءة QR ثم
-            التحقق وتسجيل تسليم السلة.
+
+            إدخال ID يدويًا أو قراءة QR ثم
+            التحقق من المستفيد وتسجيل تسليم السلة.
+
           </p>
+
 
           <button
             class="card-link"
@@ -3964,21 +2365,33 @@ body{
             فتح القسم ←
           </button>
 
+
         </div>
 
 
+
+        <!-- SEARCH -->
+
         <div class="home-card">
 
-          <div class="card-icon">⌕</div>
+
+          <div class="card-icon">
+            ⌕
+          </div>
+
 
           <h3>
             البحث عن مستفيد
           </h3>
 
+
           <p>
+
             البحث بواسطة ID أو الاسم أو اسم
-            الزوج/الزوجة أو رمز QR.
+            الزوج - الزوجه أو رمز QR.
+
           </p>
+
 
           <button
             class="card-link"
@@ -3987,40 +2400,52 @@ body{
             فتح القسم ←
           </button>
 
+
         </div>
 
+
       </div>
+
 
     </section>
 
 
 
-    <!-- ===========================
+    <!-- ==================================================
          CARD DELIVERY
-    ============================ -->
+    =================================================== -->
 
     <section
       id="view-card"
       class="view"
     >
 
+
       <div class="section-box">
 
+
         <div class="section-head">
+
 
           <div class="section-title">
             تسليم البطاقات
           </div>
 
+
           <div class="section-desc">
+
             امسح رمز QR الموجود على البطاقة
-            للتحقق من المستفيد.
+            للتحقق من المستفيد وتسجيل التسليم.
+
           </div>
+
 
         </div>
 
 
+
         <div class="scanner">
+
 
           <div
             id="reader-card"
@@ -4033,21 +2458,29 @@ body{
             class="scanner-placeholder"
           >
 
+
             <div class="scan-symbol">
               ▣
             </div>
 
+
             <div class="scan-title">
-              جاهز لمسح QR
+              جاهز لمسح رمز QR
             </div>
 
+
             <div class="scan-desc">
-              اضغط تشغيل الكاميرا لبدء المسح
+
+              اضغط على الزر أدناه لتشغيل الكاميرا
+
             </div>
+
 
           </div>
 
+
         </div>
+
 
 
         <button
@@ -4055,8 +2488,11 @@ body{
           class="btn btn-primary scanner-btn"
           onclick="startScanner('card')"
         >
+
           تشغيل الكاميرا ومسح QR
+
         </button>
+
 
 
         <div
@@ -4065,49 +2501,64 @@ body{
         ></div>
 
 
+
         <div
           id="result-card"
           class="person-result"
         ></div>
 
+
       </div>
+
 
     </section>
 
 
 
-    <!-- ===========================
+    <!-- ==================================================
          BASKET DELIVERY
-    ============================ -->
+    =================================================== -->
 
     <section
       id="view-basket"
       class="view"
     >
 
+
       <div class="section-box">
 
+
         <div class="section-head">
+
 
           <div class="section-title">
             تسليم السلة
           </div>
 
+
           <div class="section-desc">
-            أدخل ID يدويًا أو استخدم QR
-            للتحقق من المستفيد.
+
+            أدخل ID المستفيد يدويًا أو امسح
+            رمز QR للتحقق من بياناته.
+
           </div>
+
 
         </div>
 
 
+
+        <!-- MANUAL ID -->
+
         <div class="manual-box">
+
 
           <input
             id="basketId"
             class="input"
             type="text"
             inputmode="text"
+            autocomplete="off"
             placeholder="أدخل ID المستفيد"
             onkeydown="
               if(event.key==='Enter'){
@@ -4116,17 +2567,23 @@ body{
             "
           >
 
+
           <button
             class="btn btn-primary"
             onclick="lookupManualBasket()"
           >
-            بحث
+            بحث عن المستفيد
           </button>
+
 
         </div>
 
 
+
+        <!-- SCANNER -->
+
         <div class="scanner">
+
 
           <div
             id="reader-basket"
@@ -4139,21 +2596,29 @@ body{
             class="scanner-placeholder"
           >
 
+
             <div class="scan-symbol">
               ▣
             </div>
+
 
             <div class="scan-title">
               قراءة QR
             </div>
 
+
             <div class="scan-desc">
+
               يمكنك استخدام الكاميرا بدل إدخال ID
+
             </div>
+
 
           </div>
 
+
         </div>
+
 
 
         <button
@@ -4161,8 +2626,11 @@ body{
           class="btn btn-primary scanner-btn"
           onclick="startScanner('basket')"
         >
+
           تشغيل الكاميرا ومسح QR
+
         </button>
+
 
 
         <div
@@ -4171,43 +2639,55 @@ body{
         ></div>
 
 
+
         <div
           id="result-basket"
           class="person-result"
         ></div>
 
+
       </div>
+
 
     </section>
 
 
 
-    <!-- ===========================
+    <!-- ==================================================
          SEARCH
-    ============================ -->
+    =================================================== -->
 
     <section
       id="view-search"
       class="view"
     >
 
+
       <div class="section-box">
 
+
         <div class="section-head">
+
 
           <div class="section-title">
             البحث عن مستفيد
           </div>
 
+
           <div class="section-desc">
+
             ابحث بواسطة ID أو الاسم الثلاثي
-            أو اسم الزوج - الزوجه.
+            أو اسم الزوج - الزوجه أو باستخدام QR.
+
           </div>
+
 
         </div>
 
 
+
         <div class="search-controls">
+
 
           <select
             id="searchType"
@@ -4233,10 +2713,12 @@ body{
           </select>
 
 
+
           <input
             id="searchQuery"
             class="input"
             type="text"
+            autocomplete="off"
             placeholder="اكتب ID أو الاسم..."
             onkeydown="
               if(event.key==='Enter'){
@@ -4246,6 +2728,7 @@ body{
           >
 
 
+
           <button
             class="btn btn-primary"
             onclick="performSearch()"
@@ -4253,15 +2736,21 @@ body{
             بحث
           </button>
 
+
         </div>
+
 
 
         <div class="search-or">
+
           أو البحث باستخدام QR
+
         </div>
 
 
+
         <div class="scanner">
+
 
           <div
             id="reader-search"
@@ -4274,21 +2763,29 @@ body{
             class="scanner-placeholder"
           >
 
+
             <div class="scan-symbol">
               ⌕
             </div>
+
 
             <div class="scan-title">
               البحث بواسطة QR
             </div>
 
+
             <div class="scan-desc">
-              ستتوقف الكاميرا بعد أول قراءة
+
+              تتوقف الكاميرا تلقائيًا بعد قراءة الرمز
+
             </div>
+
 
           </div>
 
+
         </div>
+
 
 
         <button
@@ -4296,8 +2793,11 @@ body{
           class="btn btn-soft scanner-btn"
           onclick="startScanner('search')"
         >
+
           تشغيل الكاميرا للبحث
+
         </button>
+
 
 
         <div
@@ -4306,23 +2806,29 @@ body{
         ></div>
 
 
+
         <div
           id="searchResults"
           class="search-results"
         ></div>
 
+
       </div>
+
 
     </section>
 
 
   </main>
 
+
 </div>
 
 
 
-<!-- LOADING -->
+<!-- ======================================================
+     LOADING
+======================================================= -->
 
 <div
   id="loading"
@@ -4331,7 +2837,9 @@ body{
 
   <div class="loading-box">
 
+
     <div class="spinner"></div>
+
 
     <div
       id="loadingText"
@@ -4340,10 +2848,14 @@ body{
       جاري المعالجة...
     </div>
 
+
   </div>
 
 </div>
 
+
+
+<!-- TOAST -->
 
 <div
   id="toast"
@@ -4351,15 +2863,21 @@ body{
 ></div>
 
 
+
 <script>
 
-/* ==========================================
-   CONFIG
-========================================== */
+/* =========================================================
+   API
+========================================================= */
 
 const API_URL =
 'https://script.google.com/macros/s/AKfycbyR-bI5o4Z9AEfblClBE5rKMp8lwLS-jNQdQ89Ph0tcCUgh4Y0EppVbpwkHM-X4QU198A/exec';
 
+
+
+/* =========================================================
+   PAGE INFORMATION
+========================================================= */
 
 const PAGE_INFO = {
 
@@ -4385,54 +2903,194 @@ const PAGE_INFO = {
 };
 
 
+
+/* =========================================================
+   GLOBAL VARIABLES
+========================================================= */
+
 let scanner = null;
+
 let scannerType = null;
+
 let scannerRunning = false;
+
 let scannerProcessing = false;
 
 let currentCardPerson = null;
+
 let currentBasketPerson = null;
 
 let toastTimer = null;
 
 
-/* ==========================================
-   NAVIGATION
-========================================== */
 
-async function navigate(
-  view,
-  button
-){
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+function toggleSidebar(){
+
+  const sidebar =
+    document.getElementById(
+      'sidebar'
+    );
+
+
+  const overlay =
+    document.getElementById(
+      'sidebarOverlay'
+    );
+
+
+  const menuButton =
+    document.getElementById(
+      'menuButton'
+    );
+
+
+  const isOpen =
+    sidebar.classList.contains(
+      'open'
+    );
+
+
+  if(isOpen){
+
+    closeSidebar();
+
+    return;
+  }
+
+
+  sidebar.classList.add(
+    'open'
+  );
+
+
+  overlay.classList.add(
+    'show'
+  );
+
+
+  menuButton.classList.add(
+    'open'
+  );
+
+
+  document.body.style.overflow =
+    'hidden';
+}
+
+
+
+function closeSidebar(){
+
+  const sidebar =
+    document.getElementById(
+      'sidebar'
+    );
+
+
+  const overlay =
+    document.getElementById(
+      'sidebarOverlay'
+    );
+
+
+  const menuButton =
+    document.getElementById(
+      'menuButton'
+    );
+
+
+  sidebar.classList.remove(
+    'open'
+  );
+
+
+  overlay.classList.remove(
+    'show'
+  );
+
+
+  menuButton.classList.remove(
+    'open'
+  );
+
+
+  document.body.style.overflow =
+    '';
+}
+
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+async function navigate(view){
+
+  /*
+   * إذا كانت الكاميرا تعمل
+   * في القسم الحالي نوقفها أولاً.
+   */
 
   await stopScanner();
 
 
+  /*
+   * إخفاء كل الصفحات
+   */
+
   document
     .querySelectorAll('.view')
     .forEach(
-      el =>
-        el.classList.remove('active')
+      function(el){
+
+        el.classList.remove(
+          'active'
+        );
+      }
     );
 
 
-  document
-    .getElementById(
+  /*
+   * إظهار الصفحة المطلوبة فقط
+   */
+
+  const target =
+    document.getElementById(
       'view-' + view
-    )
-    .classList.add('active');
-
-
-  document
-    .querySelectorAll('.nav-btn')
-    .forEach(
-      el =>
-        el.classList.remove('active')
     );
 
 
-  const nav =
-    button ||
+  if(target){
+
+    target.classList.add(
+      'active'
+    );
+  }
+
+
+  /*
+   * Sidebar active state
+   */
+
+  document
+    .querySelectorAll(
+      '.nav-btn'
+    )
+    .forEach(
+      function(el){
+
+        el.classList.remove(
+          'active'
+        );
+      }
+    );
+
+
+  const activeButton =
     document.querySelector(
       '.nav-btn[data-view="' +
       view +
@@ -4440,27 +3098,43 @@ async function navigate(
     );
 
 
-  if(nav){
-    nav.classList.add('active');
+  if(activeButton){
+
+    activeButton.classList.add(
+      'active'
+    );
   }
 
 
-  document.getElementById(
-    'pageTitle'
-  ).textContent =
-    PAGE_INFO[view].title;
+  /*
+   * Page title
+   */
+
+  if(PAGE_INFO[view]){
+
+    document.getElementById(
+      'pageTitle'
+    ).textContent =
+      PAGE_INFO[view].title;
 
 
-  document.getElementById(
-    'pageSubtitle'
-  ).textContent =
-    PAGE_INFO[view].subtitle;
+    document.getElementById(
+      'pageSubtitle'
+    ).textContent =
+      PAGE_INFO[view].subtitle;
+  }
 
 
-  document.getElementById(
-    'sidebar'
-  ).classList.remove('open');
+  /*
+   * إغلاق Sidebar
+   */
 
+  closeSidebar();
+
+
+  /*
+   * أعلى الصفحة
+   */
 
   window.scrollTo({
     top:0,
@@ -4469,17 +3143,10 @@ async function navigate(
 }
 
 
-function toggleSidebar(){
 
-  document
-    .getElementById('sidebar')
-    .classList.toggle('open');
-}
-
-
-/* ==========================================
-   SCANNER
-========================================== */
+/* =========================================================
+   QR SCANNER
+========================================================= */
 
 async function startScanner(type){
 
@@ -4506,21 +3173,61 @@ async function startScanner(type){
 
   const button =
     document.getElementById(
-      'scan-' + type + '-btn'
+      'scan-' +
+      type +
+      '-btn'
     );
+
+
+  if(type === 'card'){
+
+    document.getElementById(
+      'result-card'
+    ).style.display =
+      'none';
+
+
+    currentCardPerson =
+      null;
+  }
+
+
+  if(type === 'basket'){
+
+    document.getElementById(
+      'result-basket'
+    ).style.display =
+      'none';
+
+
+    currentBasketPerson =
+      null;
+  }
+
+
+  if(type === 'search'){
+
+    document.getElementById(
+      'searchResults'
+    ).innerHTML =
+      '';
+  }
 
 
   placeholder.style.display =
     'none';
 
 
-  button.disabled = true;
+  button.disabled =
+    true;
+
 
   button.textContent =
     'جاري تشغيل الكاميرا...';
 
 
   try{
+
 
     scanner =
       new Html5Qrcode(
@@ -4540,22 +3247,37 @@ async function startScanner(type){
       },
 
       {
+
         fps:12,
 
-        qrbox:function(w,h){
 
-          const size =
-            Math.floor(
-              Math.min(w,h) *
-              .68
-            );
+        qrbox:
+          function(
+            width,
+            height
+          ){
 
-          return{
-            width:size,
-            height:size
-          };
-        }
+            const size =
+              Math.floor(
+                Math.min(
+                  width,
+                  height
+                ) *
+                .68
+              );
+
+
+            return{
+              width:size,
+              height:size
+            };
+          },
+
+
+        aspectRatio:1.0
+
       },
+
 
       function(decodedText){
 
@@ -4565,32 +3287,48 @@ async function startScanner(type){
         );
       },
 
+
       function(){}
+
     );
 
 
-    scannerRunning = true;
+    scannerRunning =
+      true;
 
 
     button.textContent =
-      'الكاميرا تعمل...';
+      'الكاميرا تعمل - وجّهها نحو QR';
 
 
   }catch(error){
 
-    console.error(error);
+
+    console.error(
+      'Camera:',
+      error
+    );
 
 
-    scannerRunning = false;
+    scannerRunning =
+      false;
 
-    scanner = null;
+
+    scanner =
+      null;
+
+
+    scannerType =
+      null;
 
 
     placeholder.style.display =
       'flex';
 
 
-    button.disabled = false;
+    button.disabled =
+      false;
+
 
     button.textContent =
       'إعادة محاولة تشغيل الكاميرا';
@@ -4598,11 +3336,16 @@ async function startScanner(type){
 
     showAlert(
       type,
-      'تعذر تشغيل الكاميرا. تأكد من منح الموقع صلاحية الكاميرا.'
+      'تعذر تشغيل الكاميرا. تأكد من منح الموقع صلاحية استخدام الكاميرا.'
     );
   }
 }
 
+
+
+/* =========================================================
+   QR FOUND
+========================================================= */
 
 async function onQrRead(
   type,
@@ -4625,23 +3368,39 @@ async function onQrRead(
   }
 
 
-  scannerProcessing = true;
+  scannerProcessing =
+    true;
 
+
+  /*
+   * اهتزاز بسيط
+   */
 
   try{
 
     if(navigator.vibrate){
+
       navigator.vibrate(80);
     }
 
   }catch(e){}
 
 
+  /*
+   * إيقاف الكاميرا فوراً
+   * بعد أول QR.
+   */
+
   await stopScanner();
 
 
-  scannerProcessing = false;
+  scannerProcessing =
+    false;
 
+
+  /*
+   * توجيه النتيجة للقسم المناسب
+   */
 
   if(type === 'card'){
 
@@ -4650,11 +3409,16 @@ async function onQrRead(
       id
     );
 
-  }else if(type === 'basket'){
+    return;
+  }
+
+
+  if(type === 'basket'){
 
     document.getElementById(
       'basketId'
-    ).value = id;
+    ).value =
+      id;
 
 
     lookupDeliveryPerson(
@@ -4662,7 +3426,11 @@ async function onQrRead(
       id
     );
 
-  }else if(type === 'search'){
+    return;
+  }
+
+
+  if(type === 'search'){
 
     document.getElementById(
       'searchType'
@@ -4676,12 +3444,24 @@ async function onQrRead(
       id;
 
 
-    searchByQr(id);
+    runSearch(
+      id,
+      'id'
+    );
   }
 }
 
 
+
+/* =========================================================
+   STOP SCANNER
+========================================================= */
+
 async function stopScanner(){
+
+  const oldType =
+    scannerType;
+
 
   if(
     scanner &&
@@ -4689,33 +3469,60 @@ async function stopScanner(){
   ){
 
     try{
-      await scanner.stop();
-    }catch(e){}
 
-    try{
-      await scanner.clear();
-    }catch(e){}
+      await scanner.stop();
+
+    }catch(error){
+
+      console.warn(
+        error
+      );
+    }
   }
 
 
-  if(scannerType){
+  if(scanner){
+
+    try{
+
+      await scanner.clear();
+
+    }catch(error){}
+  }
+
+
+  scannerRunning =
+    false;
+
+
+  scanner =
+    null;
+
+
+  scannerType =
+    null;
+
+
+  if(oldType){
+
 
     const placeholder =
       document.getElementById(
         'placeholder-' +
-        scannerType
+        oldType
       );
 
 
     const button =
       document.getElementById(
         'scan-' +
-        scannerType +
+        oldType +
         '-btn'
       );
 
 
     if(placeholder){
+
       placeholder.style.display =
         'flex';
     }
@@ -4723,41 +3530,43 @@ async function stopScanner(){
 
     if(button){
 
-      button.disabled = false;
+      button.disabled =
+        false;
+
 
       button.textContent =
-        scannerType === 'search'
+
+        oldType === 'search'
+
           ? 'تشغيل الكاميرا للبحث'
+
           : 'تشغيل الكاميرا ومسح QR';
     }
   }
-
-
-  scanner = null;
-
-  scannerType = null;
-
-  scannerRunning = false;
 }
 
 
-/* ==========================================
-   CARD / BASKET LOOKUP
-========================================== */
+
+/* =========================================================
+   BASKET MANUAL ID
+========================================================= */
 
 function lookupManualBasket(){
 
   const id =
-    document.getElementById(
-      'basketId'
-    ).value.trim();
+    document
+      .getElementById(
+        'basketId'
+      )
+      .value
+      .trim();
 
 
   if(!id){
 
     showAlert(
       'basket',
-      'أدخل ID المستفيد أولًا.'
+      'يرجى إدخال ID المستفيد.'
     );
 
     return;
@@ -4771,6 +3580,11 @@ function lookupManualBasket(){
 }
 
 
+
+/* =========================================================
+   GET PERSON
+========================================================= */
+
 function lookupDeliveryPerson(
   type,
   id
@@ -4778,18 +3592,22 @@ function lookupDeliveryPerson(
 
   hideAlert(type);
 
+
   showLoading(
-    'جاري البحث عن المستفيد...'
+    'جاري البحث عن بيانات المستفيد...'
   );
 
 
   apiRequest(
+
     {
       action:'person',
       id:id
     },
 
+
     function(response){
+
 
       hideLoading();
 
@@ -4800,11 +3618,16 @@ function lookupDeliveryPerson(
       ){
 
         showAlert(
+
           type,
+
           response &&
           response.message
+
             ? response.message
+
             : 'لم يتم العثور على المستفيد.'
+
         );
 
         return;
@@ -4833,22 +3656,30 @@ function lookupDeliveryPerson(
       );
     },
 
-    function(){
+
+    function(error){
+
+
+      console.error(error);
+
 
       hideLoading();
 
+
       showAlert(
         type,
-        'تعذر الاتصال بقاعدة البيانات.'
+        'تعذر الاتصال بقاعدة البيانات. تحقق من اتصال الإنترنت.'
       );
     }
+
   );
 }
 
 
-/* ==========================================
-   DELIVERY RESULT
-========================================== */
+
+/* =========================================================
+   RENDER DELIVERY PERSON
+========================================================= */
 
 function renderDeliveryPerson(
   type,
@@ -4862,44 +3693,64 @@ function renderDeliveryPerson(
 
 
   const delivered =
+
     type === 'card'
+
       ? person.cardDelivered
+
       : person.basketDelivered;
 
 
   const itemName =
+
     type === 'card'
+
       ? 'البطاقة'
+
       : 'السلة';
 
 
-  let action;
+  let actionHtml;
 
 
   if(delivered){
 
-    action = `
+
+    actionHtml = `
 
       <div class="delivered">
 
-        <span>✓</span>
+        <span>
+          ✓
+        </span>
 
-        تم تسليم ${itemName}
-        لهذا المستفيد مسبقًا
+        <span>
+
+          تم تسليم
+          ${itemName}
+          لهذا المستفيد مسبقًا
+
+        </span>
 
       </div>
 
     `;
 
+
   }else{
 
-    action = `
+
+    actionHtml = `
 
       <button
         class="btn btn-deliver"
         onclick="confirmDelivery('${type}')"
       >
+
+        ✓ &nbsp;
+
         تسليم ${itemName}
+
       </button>
 
     `;
@@ -4910,24 +3761,37 @@ function renderDeliveryPerson(
 
     <div class="person-main">
 
+
       <div class="person-label">
         الاسم الثلاثي
       </div>
 
+
       <div class="person-name">
-        ${escapeHtml(person.name)}
+
+        ${escapeHtml(
+          person.name
+        )}
+
       </div>
 
+
       <div class="person-id">
-        ID: ${escapeHtml(person.id)}
+
+        ID:
+        ${escapeHtml(
+          person.id
+        )}
+
       </div>
+
 
     </div>
 
 
     <div class="person-action">
 
-      ${action}
+      ${actionHtml}
 
     </div>
 
@@ -4936,18 +3800,35 @@ function renderDeliveryPerson(
 
   result.style.display =
     'block';
+
+
+  setTimeout(
+    function(){
+
+      result.scrollIntoView({
+        behavior:'smooth',
+        block:'nearest'
+      });
+
+    },
+    100
+  );
 }
 
 
-/* ==========================================
+
+/* =========================================================
    CONFIRM DELIVERY
-========================================== */
+========================================================= */
 
 function confirmDelivery(type){
 
   const person =
+
     type === 'card'
+
       ? currentCardPerson
+
       : currentBasketPerson;
 
 
@@ -4957,30 +3838,42 @@ function confirmDelivery(type){
 
 
   const itemName =
+
     type === 'card'
+
       ? 'البطاقة'
+
       : 'السلة';
 
 
   showLoading(
+
     'جاري تسجيل تسليم ' +
     itemName +
     '...'
+
   );
 
 
   apiRequest(
+
     {
+
       action:
+
         type === 'card'
+
           ? 'deliverCard'
+
           : 'deliverBasket',
 
       id:
         person.id
     },
 
+
     function(response){
+
 
       hideLoading();
 
@@ -4991,10 +3884,14 @@ function confirmDelivery(type){
       ){
 
         showToast(
+
           response &&
           response.message
+
             ? response.message
-            : 'تعذر تسجيل التسليم.'
+
+            : 'تعذر تسجيل عملية التسليم.'
+
         );
 
         return;
@@ -5019,33 +3916,56 @@ function confirmDelivery(type){
       );
 
 
+      try{
+
+        if(navigator.vibrate){
+
+          navigator.vibrate(
+            [80,50,80]
+          );
+        }
+
+      }catch(e){}
+
+
       showToast(
         response.message
       );
     },
 
-    function(){
+
+    function(error){
+
+
+      console.error(error);
+
 
       hideLoading();
+
 
       showToast(
         'تعذر الاتصال بقاعدة البيانات.'
       );
     }
+
   );
 }
 
 
-/* ==========================================
+
+/* =========================================================
    SEARCH
-========================================== */
+========================================================= */
 
 function performSearch(){
 
   const query =
-    document.getElementById(
-      'searchQuery'
-    ).value.trim();
+    document
+      .getElementById(
+        'searchQuery'
+      )
+      .value
+      .trim();
 
 
   const type =
@@ -5058,7 +3978,7 @@ function performSearch(){
 
     showAlert(
       'search',
-      'اكتب قيمة للبحث.'
+      'يرجى إدخال قيمة للبحث.'
     );
 
     return;
@@ -5072,36 +3992,39 @@ function performSearch(){
 }
 
 
-function searchByQr(id){
-
-  runSearch(
-    id,
-    'id'
-  );
-}
-
 
 function runSearch(
   query,
   type
 ){
 
-  hideAlert('search');
+  hideAlert(
+    'search'
+  );
+
+
+  document.getElementById(
+    'searchResults'
+  ).innerHTML =
+    '';
 
 
   showLoading(
-    'جاري البحث...'
+    'جاري البحث في بيانات المستفيدين...'
   );
 
 
   apiRequest(
+
     {
       action:'search',
       q:query,
       type:type
     },
 
+
     function(response){
+
 
       hideLoading();
 
@@ -5112,11 +4035,16 @@ function runSearch(
       ){
 
         showAlert(
+
           'search',
+
           response &&
           response.message
+
             ? response.message
-            : 'حدث خطأ في البحث.'
+
+            : 'حدث خطأ أثناء البحث.'
+
         );
 
         return;
@@ -5128,24 +4056,34 @@ function runSearch(
       );
     },
 
-    function(){
+
+    function(error){
+
+
+      console.error(error);
+
 
       hideLoading();
+
 
       showAlert(
         'search',
         'تعذر الاتصال بقاعدة البيانات.'
       );
     }
+
   );
 }
 
 
-/* ==========================================
-   SEARCH RESULTS
-========================================== */
 
-function renderSearchResults(results){
+/* =========================================================
+   SEARCH RESULTS
+========================================================= */
+
+function renderSearchResults(
+  results
+){
 
   const container =
     document.getElementById(
@@ -5157,8 +4095,10 @@ function renderSearchResults(results){
 
     container.innerHTML = `
 
-      <div class="alert"
-           style="display:block">
+      <div
+        class="alert"
+        style="display:block"
+      >
 
         لم يتم العثور على نتائج مطابقة.
 
@@ -5186,6 +4126,7 @@ function renderSearchResults(results){
   results.forEach(
     function(person){
 
+
       html += `
 
         <div class="result-card">
@@ -5193,9 +4134,12 @@ function renderSearchResults(results){
 
           <div class="result-top">
 
+
             <div class="result-name">
 
-              ${escapeHtml(person.name)}
+              ${escapeHtml(
+                person.name
+              )}
 
             </div>
 
@@ -5203,11 +4147,15 @@ function renderSearchResults(results){
             <div class="result-id">
 
               ID:
-              ${escapeHtml(person.id)}
+              ${escapeHtml(
+                person.id
+              )}
 
             </div>
 
+
           </div>
+
 
 
           <div class="info-grid">
@@ -5215,22 +4163,29 @@ function renderSearchResults(results){
 
             <div class="info-item">
 
+
               <div class="info-label">
 
                 اسم الزوج - الزوجه
 
               </div>
 
+
               <div class="info-value">
 
-                ${escapeHtml(person.spouse)}
+                ${escapeHtml(
+                  person.spouse
+                )}
 
               </div>
+
 
             </div>
 
 
+
             <div class="info-item">
+
 
               <div class="info-label">
 
@@ -5238,34 +4193,42 @@ function renderSearchResults(results){
 
               </div>
 
+
               <div
                 class="info-value"
                 dir="ltr"
               >
 
-                ${escapeHtml(person.phone)}
+                ${escapeHtml(
+                  person.phone
+                )}
 
               </div>
+
 
             </div>
 
 
+
             <div class="info-item">
 
+
               <div class="info-label">
-
                 ID
-
               </div>
+
 
               <div
                 class="info-value"
                 dir="ltr"
               >
 
-                ${escapeHtml(person.id)}
+                ${escapeHtml(
+                  person.id
+                )}
 
               </div>
+
 
             </div>
 
@@ -5273,35 +4236,45 @@ function renderSearchResults(results){
           </div>
 
 
+
           <div class="delivery-statuses">
 
 
             <span class="
               badge
-              ${person.cardDelivered
-                ? 'yes'
-                : 'no'}
+              ${
+                person.cardDelivered
+                  ? 'yes'
+                  : 'no'
+              }
             ">
 
               ${
                 person.cardDelivered
+
                   ? '✓ البطاقة: تم التسليم'
+
                   : '○ البطاقة: لم يتم التسليم'
               }
 
             </span>
 
 
+
             <span class="
               badge
-              ${person.basketDelivered
-                ? 'yes'
-                : 'no'}
+              ${
+                person.basketDelivered
+                  ? 'yes'
+                  : 'no'
+              }
             ">
 
               ${
                 person.basketDelivered
+
                   ? '✓ السلة: تم التسليم'
+
                   : '○ السلة: لم يتم التسليم'
               }
 
@@ -5314,6 +4287,7 @@ function renderSearchResults(results){
         </div>
 
       `;
+
     }
   );
 
@@ -5323,9 +4297,10 @@ function renderSearchResults(results){
 }
 
 
-/* ==========================================
+
+/* =========================================================
    JSONP API
-========================================== */
+========================================================= */
 
 function apiRequest(
   params,
@@ -5353,28 +4328,36 @@ function apiRequest(
     );
 
 
-  let done = false;
+  let done =
+    false;
 
 
   const timeout =
     setTimeout(
       function(){
 
+
         if(done){
           return;
         }
 
-        done = true;
+
+        done =
+          true;
+
 
         cleanup();
 
+
         if(failure){
+
           failure(
             new Error(
-              'timeout'
+              'Request timeout'
             )
           );
         }
+
 
       },
       15000
@@ -5383,31 +4366,61 @@ function apiRequest(
 
   function cleanup(){
 
-    clearTimeout(timeout);
+
+    clearTimeout(
+      timeout
+    );
+
 
     try{
-      delete window[callback];
-    }catch(e){}
 
-    if(script.parentNode){
-      script.parentNode.removeChild(script);
+      delete window[
+        callback
+      ];
+
+    }catch(e){
+
+      window[
+        callback
+      ] = undefined;
+    }
+
+
+    if(
+      script.parentNode
+    ){
+
+      script.parentNode
+        .removeChild(
+          script
+        );
     }
   }
 
 
-  window[callback] =
+  window[
+    callback
+  ] =
     function(data){
+
 
       if(done){
         return;
       }
 
-      done = true;
+
+      done =
+        true;
+
 
       cleanup();
 
+
       if(success){
-        success(data);
+
+        success(
+          data
+        );
       }
     };
 
@@ -5415,18 +4428,24 @@ function apiRequest(
   script.onerror =
     function(){
 
+
       if(done){
         return;
       }
 
-      done = true;
+
+      done =
+        true;
+
 
       cleanup();
 
+
       if(failure){
+
         failure(
           new Error(
-            'connection failed'
+            'Connection failed'
           )
         );
       }
@@ -5436,41 +4455,58 @@ function apiRequest(
   params.callback =
     callback;
 
+
   params._ =
     Date.now();
 
 
   script.src =
+
     API_URL +
+
     '?' +
+
     new URLSearchParams(
       params
     ).toString();
 
 
-  document.body.appendChild(
-    script
-  );
+  document.body
+    .appendChild(
+      script
+    );
 }
 
 
-/* ==========================================
-   UI HELPERS
-========================================== */
 
-function showAlert(type,text){
+/* =========================================================
+   ALERT
+========================================================= */
+
+function showAlert(
+  type,
+  text
+){
 
   const el =
     document.getElementById(
       'alert-' + type
     );
 
+
+  if(!el){
+    return;
+  }
+
+
   el.textContent =
     text;
+
 
   el.style.display =
     'block';
 }
+
 
 
 function hideAlert(type){
@@ -5480,34 +4516,53 @@ function hideAlert(type){
       'alert-' + type
     );
 
+
   if(el){
+
     el.style.display =
       'none';
   }
 }
 
 
+
+/* =========================================================
+   LOADING
+========================================================= */
+
 function showLoading(text){
 
   document.getElementById(
     'loadingText'
   ).textContent =
-    text || 'جاري المعالجة...';
+
+    text ||
+    'جاري المعالجة...';
 
 
   document.getElementById(
     'loading'
-  ).classList.add('active');
+  ).classList.add(
+    'active'
+  );
 }
+
 
 
 function hideLoading(){
 
   document.getElementById(
     'loading'
-  ).classList.remove('active');
+  ).classList.remove(
+    'active'
+  );
 }
 
+
+
+/* =========================================================
+   TOAST
+========================================================= */
 
 function showToast(text){
 
@@ -5535,15 +4590,22 @@ function showToast(text){
     setTimeout(
       function(){
 
+
         el.classList.remove(
           'show'
         );
+
 
       },
       3000
     );
 }
 
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
 
 function escapeHtml(value){
 
@@ -5552,21 +4614,47 @@ function escapeHtml(value){
       ? ''
       : value
   )
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;')
-    .replace(/'/g,'&#039;');
+
+    .replace(
+      /&/g,
+      '&amp;'
+    )
+
+    .replace(
+      /</g,
+      '&lt;'
+    )
+
+    .replace(
+      />/g,
+      '&gt;'
+    )
+
+    .replace(
+      /"/g,
+      '&quot;'
+    )
+
+    .replace(
+      /'/g,
+      '&#039;'
+    );
 }
 
 
+
+/* =========================================================
+   PAGE EVENTS
+========================================================= */
+
 /*
- * إيقاف الكاميرا عند الخروج
+ * إيقاف الكاميرا إذا أغلق المستخدم الصفحة
  */
 
 window.addEventListener(
   'pagehide',
   function(){
+
 
     if(
       scanner &&
@@ -5574,9 +4662,57 @@ window.addEventListener(
     ){
 
       try{
+
         scanner.stop();
+
       }catch(e){}
     }
+
+  }
+);
+
+
+
+/*
+ * إذا كبر المستخدم الشاشة من Mobile إلى Desktop
+ * نغلق Drawer.
+ */
+
+window.addEventListener(
+  'resize',
+  function(){
+
+
+    if(
+      window.innerWidth >
+      850
+    ){
+
+      closeSidebar();
+    }
+
+  }
+);
+
+
+
+/*
+ * ESC يغلق Sidebar على الأجهزة التي تحتوي Keyboard
+ */
+
+document.addEventListener(
+  'keydown',
+  function(event){
+
+
+    if(
+      event.key ===
+      'Escape'
+    ){
+
+      closeSidebar();
+    }
+
   }
 );
 
