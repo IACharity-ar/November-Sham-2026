@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 
 <html lang="ar" dir="rtl">
 
@@ -2886,4 +2886,2701 @@ window.addEventListener(
 
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, viewport-fit=cover"
+>
+
+<meta
+  name="theme-color"
+  content="#005c32"
+>
+
+<title>IAC | November Sham 2026</title>
+
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet"
+>
+
+
+<style>
+
+:root{
+  --green:#006838;
+  --green2:#008b4c;
+  --dark:#003b21;
+  --deep:#002b18;
+  --soft:#eaf7f0;
+  --bg:#f4f7f5;
+  --white:#fff;
+  --text:#17251e;
+  --muted:#718078;
+  --border:#e0e9e4;
+  --success:#078447;
+  --successSoft:#e9f8f0;
+  --danger:#d83f3f;
+  --dangerSoft:#fff0f0;
+  --shadow:0 16px 40px rgba(0,65,35,.09);
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+html,body{
+  margin:0;
+  min-height:100%;
+  font-family:"Cairo",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+button,input,select{
+  font-family:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+body{
+  display:flex;
+}
+
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.sidebar{
+  position:fixed;
+  z-index:1000;
+  right:0;
+  top:0;
+  bottom:0;
+  width:270px;
+  padding:24px 17px;
+  color:white;
+  background:
+    radial-gradient(circle at top right,rgba(255,255,255,.08),transparent 28%),
+    linear-gradient(180deg,var(--dark),var(--deep));
+  box-shadow:-10px 0 35px rgba(0,40,22,.10);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:5px 8px 25px;
+  border-bottom:1px solid rgba(255,255,255,.09);
+}
+
+.logo{
+  width:53px;
+  height:53px;
+  flex:0 0 53px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid rgba(255,255,255,.9);
+  border-radius:50%;
+  font-size:17px;
+  font-weight:800;
+}
+
+.brand-name{
+  font-size:14px;
+  font-weight:800;
+}
+
+.brand-en{
+  direction:ltr;
+  margin-top:2px;
+  font-size:7px;
+  opacity:.55;
+}
+
+.campaign{
+  margin:18px 7px;
+  padding:10px 12px;
+  border-radius:12px;
+  background:rgba(255,255,255,.07);
+  font-size:10px;
+  text-align:center;
+  color:rgba(255,255,255,.75);
+}
+
+.nav{
+  margin-top:18px;
+}
+
+.nav-btn{
+  width:100%;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:7px;
+  padding:13px 14px;
+  border:0;
+  border-radius:13px;
+  color:rgba(255,255,255,.68);
+  background:transparent;
+  text-align:right;
+  font-size:12px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.nav-btn:hover{
+  background:rgba(255,255,255,.06);
+  color:white;
+}
+
+.nav-btn.active{
+  color:white;
+  background:linear-gradient(135deg,var(--green),var(--green2));
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.nav-icon{
+  width:30px;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:9px;
+  background:rgba(255,255,255,.10);
+  font-size:15px;
+}
+
+.sidebar-footer{
+  position:absolute;
+  right:20px;
+  left:20px;
+  bottom:20px;
+  color:rgba(255,255,255,.35);
+  font-size:8px;
+  text-align:center;
+}
+
+
+/* ==============================
+   MOBILE TOP BAR
+============================== */
+
+.mobile-header{
+  display:none;
+}
+
+
+/* ==============================
+   MAIN
+============================== */
+
+.main{
+  width:calc(100% - 270px);
+  margin-right:270px;
+  min-height:100vh;
+}
+
+.topbar{
+  height:82px;
+  padding:0 35px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--border);
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(10px);
+}
+
+.page-title{
+  font-size:20px;
+  font-weight:800;
+}
+
+.page-subtitle{
+  margin-top:2px;
+  color:var(--muted);
+  font-size:10px;
+}
+
+.status{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:8px 12px;
+  border-radius:30px;
+  color:var(--success);
+  background:var(--successSoft);
+  font-size:9px;
+  font-weight:800;
+}
+
+.status-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--success);
+}
+
+.content{
+  width:min(1100px,calc(100% - 50px));
+  margin:0 auto;
+  padding:35px 0 60px;
+}
+
+.view{
+  display:none;
+}
+
+.view.active{
+  display:block;
+}
+
+
+/* ==============================
+   HOME
+============================== */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:32px;
+  border-radius:24px;
+  color:white;
+  background:linear-gradient(135deg,var(--dark),var(--green));
+  box-shadow:var(--shadow);
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  width:250px;
+  height:250px;
+  left:-80px;
+  top:-110px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;
+}
+
+.hero-small{
+  font-size:10px;
+  opacity:.65;
+}
+
+.hero-title{
+  margin-top:7px;
+  font-size:28px;
+  font-weight:800;
+}
+
+.hero-text{
+  max-width:600px;
+  margin-top:8px;
+  color:rgba(255,255,255,.68);
+  font-size:11px;
+  line-height:2;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:25px;
+}
+
+.home-card{
+  position:relative;
+  overflow:hidden;
+  padding:24px;
+  min-height:210px;
+  border:1px solid var(--border);
+  border-radius:21px;
+  background:white;
+  box-shadow:var(--shadow);
+  transition:.2s;
+}
+
+.home-card:hover{
+  transform:translateY(-3px);
+}
+
+.card-icon{
+  width:55px;
+  height:55px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:16px;
+  color:white;
+  background:linear-gradient(135deg,var(--dark),var(--green2));
+  font-size:24px;
+}
+
+.home-card h3{
+  margin:17px 0 5px;
+  font-size:16px;
+}
+
+.home-card p{
+  margin:0;
+  min-height:42px;
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.9;
+}
+
+.card-link{
+  margin-top:17px;
+  border:0;
+  padding:0;
+  color:var(--green);
+  background:transparent;
+  font-size:10px;
+  font-weight:800;
+}
+
+
+/* ==============================
+   SECTION
+============================== */
+
+.section-box{
+  padding:25px;
+  border:1px solid var(--border);
+  border-radius:23px;
+  background:white;
+  box-shadow:var(--shadow);
+}
+
+.section-head{
+  margin-bottom:22px;
+}
+
+.section-title{
+  font-size:20px;
+  font-weight:800;
+}
+
+.section-desc{
+  margin-top:4px;
+  color:var(--muted);
+  font-size:10px;
+}
+
+
+/* ==============================
+   INPUTS
+============================== */
+
+.manual-box{
+  display:flex;
+  gap:10px;
+  margin-bottom:18px;
+}
+
+.input{
+  width:100%;
+  height:51px;
+  padding:0 15px;
+  outline:0;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:#fafcfb;
+  color:var(--text);
+  font-size:12px;
+  transition:.2s;
+}
+
+.input:focus{
+  border-color:var(--green);
+  box-shadow:0 0 0 3px rgba(0,104,56,.08);
+}
+
+.manual-box .input{
+  flex:1;
+}
+
+.btn{
+  border:0;
+  padding:14px 20px;
+  border-radius:13px;
+  font-size:11px;
+  font-weight:800;
+}
+
+.btn-primary{
+  color:white;
+  background:linear-gradient(135deg,var(--dark),var(--green));
+}
+
+.btn-soft{
+  color:var(--green);
+  background:var(--soft);
+}
+
+.btn-deliver{
+  width:100%;
+  color:white;
+  background:linear-gradient(135deg,var(--green),var(--green2));
+}
+
+
+/* ==============================
+   SCANNER
+============================== */
+
+.scanner{
+  position:relative;
+  overflow:hidden;
+  min-height:320px;
+  border-radius:20px;
+  background:#06150e;
+}
+
+.reader{
+  width:100%;
+  min-height:320px;
+}
+
+.reader video{
+  width:100%!important;
+  min-height:320px!important;
+  object-fit:cover!important;
+}
+
+.reader img,
+.reader [id$="__dashboard"]{
+  display:none!important;
+}
+
+.scanner-placeholder{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  background:radial-gradient(circle,#0c2619,#06150e 70%);
+}
+
+.scan-symbol{
+  width:68px;
+  height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:13px;
+  border-radius:19px;
+  background:rgba(255,255,255,.08);
+  font-size:28px;
+}
+
+.scan-title{
+  font-size:13px;
+  font-weight:800;
+}
+
+.scan-desc{
+  margin-top:4px;
+  color:rgba(255,255,255,.48);
+  font-size:9px;
+}
+
+.scanner-btn{
+  width:100%;
+  margin-top:13px;
+}
+
+
+/* ==============================
+   PERSON RESULT
+============================== */
+
+.person-result{
+  display:none;
+  margin-top:18px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:18px;
+}
+
+.person-main{
+  padding:20px;
+  background:linear-gradient(135deg,#f3fbf7,#fff);
+}
+
+.person-label{
+  color:var(--muted);
+  font-size:9px;
+}
+
+.person-name{
+  margin-top:3px;
+  font-size:21px;
+  font-weight:800;
+}
+
+.person-id{
+  display:inline-block;
+  direction:ltr;
+  margin-top:9px;
+  padding:6px 10px;
+  border-radius:8px;
+  color:var(--green);
+  background:var(--soft);
+  font-size:10px;
+  font-weight:800;
+}
+
+.person-action{
+  padding:16px;
+  border-top:1px solid var(--border);
+}
+
+.delivered{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:13px;
+  border:1px solid #bce7ce;
+  border-radius:12px;
+  color:var(--success);
+  background:var(--successSoft);
+  font-size:11px;
+  font-weight:800;
+}
+
+
+/* ==============================
+   SEARCH
+============================== */
+
+.search-controls{
+  display:grid;
+  grid-template-columns:170px 1fr auto;
+  gap:10px;
+}
+
+.search-or{
+  margin:15px 0;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.search-or:before,
+.search-or:after{
+  content:"";
+  height:1px;
+  flex:1;
+  background:var(--border);
+}
+
+.search-results{
+  margin-top:22px;
+}
+
+.result-count{
+  margin-bottom:12px;
+  color:var(--muted);
+  font-size:10px;
+}
+
+.result-card{
+  margin-bottom:12px;
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:17px;
+  background:#fff;
+}
+
+.result-top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  margin-bottom:15px;
+}
+
+.result-name{
+  font-size:15px;
+  font-weight:800;
+}
+
+.result-id{
+  direction:ltr;
+  color:var(--green);
+  font-size:11px;
+  font-weight:800;
+}
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.info-item{
+  padding:11px;
+  border-radius:10px;
+  background:#f6f9f7;
+}
+
+.info-label{
+  color:var(--muted);
+  font-size:8px;
+}
+
+.info-value{
+  margin-top:3px;
+  font-size:10px;
+  font-weight:700;
+}
+
+.delivery-statuses{
+  display:flex;
+  gap:8px;
+  margin-top:12px;
+}
+
+.badge{
+  padding:7px 10px;
+  border-radius:30px;
+  font-size:8px;
+  font-weight:800;
+}
+
+.badge.yes{
+  color:var(--success);
+  background:var(--successSoft);
+}
+
+.badge.no{
+  color:#a16b10;
+  background:#fff7e5;
+}
+
+
+/* ==============================
+   ALERT + LOADING
+============================== */
+
+.alert{
+  display:none;
+  margin-top:15px;
+  padding:13px;
+  border-radius:12px;
+  color:var(--danger);
+  background:var(--dangerSoft);
+  font-size:10px;
+  text-align:center;
+}
+
+.loading{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  inset:0;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,38,21,.70);
+  backdrop-filter:blur(6px);
+}
+
+.loading.active{
+  display:flex;
+}
+
+.loading-box{
+  min-width:190px;
+  padding:25px;
+  border-radius:20px;
+  background:white;
+  text-align:center;
+}
+
+.spinner{
+  width:40px;
+  height:40px;
+  margin:0 auto 12px;
+  border:4px solid #e6eee9;
+  border-top-color:var(--green);
+  border-radius:50%;
+  animation:spin .7s linear infinite;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+.loading-text{
+  color:var(--green);
+  font-size:10px;
+  font-weight:800;
+}
+
+.toast{
+  position:fixed;
+  z-index:10000;
+  left:50%;
+  bottom:25px;
+  width:calc(100% - 35px);
+  max-width:400px;
+  padding:13px;
+  transform:translate(-50%,100px);
+  opacity:0;
+  border-radius:13px;
+  color:white;
+  background:#10251a;
+  text-align:center;
+  font-size:10px;
+  transition:.3s;
+}
+
+.toast.show{
+  transform:translate(-50%,0);
+  opacity:1;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media(max-width:850px){
+
+  .sidebar{
+    width:270px;
+    transform:translateX(100%);
+    transition:.25s;
+  }
+
+  .sidebar.open{
+    transform:translateX(0);
+  }
+
+  .mobile-header{
+    position:sticky;
+    z-index:900;
+    top:0;
+    height:64px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 15px;
+    color:white;
+    background:var(--dark);
+  }
+
+  .menu-btn{
+    width:39px;
+    height:39px;
+    border:0;
+    border-radius:10px;
+    color:white;
+    background:rgba(255,255,255,.10);
+    font-size:19px;
+  }
+
+  .mobile-brand{
+    font-size:12px;
+    font-weight:800;
+  }
+
+  .main{
+    width:100%;
+    margin:0;
+  }
+
+  .topbar{
+    height:auto;
+    padding:20px 16px;
+  }
+
+  .status{
+    display:none;
+  }
+
+  .content{
+    width:calc(100% - 24px);
+    padding:20px 0 45px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding:24px;
+  }
+
+  .hero-title{
+    font-size:21px;
+  }
+
+  .search-controls{
+    grid-template-columns:1fr;
+  }
+
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .manual-box{
+    flex-direction:column;
+  }
+
+  .scanner{
+    min-height:290px;
+  }
+
+  .reader{
+    min-height:290px;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<aside id="sidebar" class="sidebar">
+
+  <div class="brand">
+    <div class="logo">IAC</div>
+
+    <div>
+      <div class="brand-name">
+        مؤسسة الإغاثة الدولية
+      </div>
+
+      <div class="brand-en">
+        INTERNATIONAL AID CAMPAIGN
+      </div>
+    </div>
+  </div>
+
+  <div class="campaign">
+    November Sham 2026
+  </div>
+
+
+  <nav class="nav">
+
+    <button
+      class="nav-btn active"
+      data-view="home"
+      onclick="navigate('home',this)"
+    >
+      <span class="nav-icon">⌂</span>
+      الرئيسية
+    </button>
+
+
+    <button
+      class="nav-btn"
+      data-view="card"
+      onclick="navigate('card',this)"
+    >
+      <span class="nav-icon">▣</span>
+      تسليم البطاقات
+    </button>
+
+
+    <button
+      class="nav-btn"
+      data-view="basket"
+      onclick="navigate('basket',this)"
+    >
+      <span class="nav-icon">▤</span>
+      تسليم السلة
+    </button>
+
+
+    <button
+      class="nav-btn"
+      data-view="search"
+      onclick="navigate('search',this)"
+    >
+      <span class="nav-icon">⌕</span>
+      البحث عن مستفيد
+    </button>
+
+  </nav>
+
+
+  <div class="sidebar-footer">
+    IAC Distribution Management System
+  </div>
+
+</aside>
+
+
+<div class="main">
+
+  <!-- MOBILE HEADER -->
+
+  <div class="mobile-header">
+
+    <div class="mobile-brand">
+      IAC • November Sham 2026
+    </div>
+
+    <button
+      class="menu-btn"
+      onclick="toggleSidebar()"
+    >
+      ☰
+    </button>
+
+  </div>
+
+
+  <!-- TOPBAR -->
+
+  <header class="topbar">
+
+    <div>
+      <div
+        id="pageTitle"
+        class="page-title"
+      >
+        الرئيسية
+      </div>
+
+      <div
+        id="pageSubtitle"
+        class="page-subtitle"
+      >
+        نظام إدارة عمليات التوزيع
+      </div>
+    </div>
+
+
+    <div class="status">
+      <span class="status-dot"></span>
+      النظام متصل
+    </div>
+
+  </header>
+
+
+  <main class="content">
+
+
+    <!-- ===========================
+         HOME
+    ============================ -->
+
+    <section
+      id="view-home"
+      class="view active"
+    >
+
+      <div class="hero">
+
+        <div class="hero-small">
+          INTERNATIONAL AID CAMPAIGN
+        </div>
+
+        <div class="hero-title">
+          November Sham 2026
+        </div>
+
+        <div class="hero-text">
+          نظام مركزي للتحقق من المستفيدين وإدارة
+          عمليات تسليم البطاقات والسلال والبحث في
+          بيانات المستفيدين.
+        </div>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="home-card">
+
+          <div class="card-icon">▣</div>
+
+          <h3>
+            تسليم البطاقات
+          </h3>
+
+          <p>
+            قراءة رمز QR والتحقق من المستفيد
+            وتسجيل عملية تسليم البطاقة.
+          </p>
+
+          <button
+            class="card-link"
+            onclick="navigate('card')"
+          >
+            فتح القسم ←
+          </button>
+
+        </div>
+
+
+        <div class="home-card">
+
+          <div class="card-icon">▤</div>
+
+          <h3>
+            تسليم السلة
+          </h3>
+
+          <p>
+            البحث بواسطة ID أو قراءة QR ثم
+            التحقق وتسجيل تسليم السلة.
+          </p>
+
+          <button
+            class="card-link"
+            onclick="navigate('basket')"
+          >
+            فتح القسم ←
+          </button>
+
+        </div>
+
+
+        <div class="home-card">
+
+          <div class="card-icon">⌕</div>
+
+          <h3>
+            البحث عن مستفيد
+          </h3>
+
+          <p>
+            البحث بواسطة ID أو الاسم أو اسم
+            الزوج/الزوجة أو رمز QR.
+          </p>
+
+          <button
+            class="card-link"
+            onclick="navigate('search')"
+          >
+            فتح القسم ←
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         CARD DELIVERY
+    ============================ -->
+
+    <section
+      id="view-card"
+      class="view"
+    >
+
+      <div class="section-box">
+
+        <div class="section-head">
+
+          <div class="section-title">
+            تسليم البطاقات
+          </div>
+
+          <div class="section-desc">
+            امسح رمز QR الموجود على البطاقة
+            للتحقق من المستفيد.
+          </div>
+
+        </div>
+
+
+        <div class="scanner">
+
+          <div
+            id="reader-card"
+            class="reader"
+          ></div>
+
+
+          <div
+            id="placeholder-card"
+            class="scanner-placeholder"
+          >
+
+            <div class="scan-symbol">
+              ▣
+            </div>
+
+            <div class="scan-title">
+              جاهز لمسح QR
+            </div>
+
+            <div class="scan-desc">
+              اضغط تشغيل الكاميرا لبدء المسح
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <button
+          id="scan-card-btn"
+          class="btn btn-primary scanner-btn"
+          onclick="startScanner('card')"
+        >
+          تشغيل الكاميرا ومسح QR
+        </button>
+
+
+        <div
+          id="alert-card"
+          class="alert"
+        ></div>
+
+
+        <div
+          id="result-card"
+          class="person-result"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         BASKET DELIVERY
+    ============================ -->
+
+    <section
+      id="view-basket"
+      class="view"
+    >
+
+      <div class="section-box">
+
+        <div class="section-head">
+
+          <div class="section-title">
+            تسليم السلة
+          </div>
+
+          <div class="section-desc">
+            أدخل ID يدويًا أو استخدم QR
+            للتحقق من المستفيد.
+          </div>
+
+        </div>
+
+
+        <div class="manual-box">
+
+          <input
+            id="basketId"
+            class="input"
+            type="text"
+            inputmode="text"
+            placeholder="أدخل ID المستفيد"
+            onkeydown="
+              if(event.key==='Enter'){
+                lookupManualBasket();
+              }
+            "
+          >
+
+          <button
+            class="btn btn-primary"
+            onclick="lookupManualBasket()"
+          >
+            بحث
+          </button>
+
+        </div>
+
+
+        <div class="scanner">
+
+          <div
+            id="reader-basket"
+            class="reader"
+          ></div>
+
+
+          <div
+            id="placeholder-basket"
+            class="scanner-placeholder"
+          >
+
+            <div class="scan-symbol">
+              ▣
+            </div>
+
+            <div class="scan-title">
+              قراءة QR
+            </div>
+
+            <div class="scan-desc">
+              يمكنك استخدام الكاميرا بدل إدخال ID
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <button
+          id="scan-basket-btn"
+          class="btn btn-primary scanner-btn"
+          onclick="startScanner('basket')"
+        >
+          تشغيل الكاميرا ومسح QR
+        </button>
+
+
+        <div
+          id="alert-basket"
+          class="alert"
+        ></div>
+
+
+        <div
+          id="result-basket"
+          class="person-result"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         SEARCH
+    ============================ -->
+
+    <section
+      id="view-search"
+      class="view"
+    >
+
+      <div class="section-box">
+
+        <div class="section-head">
+
+          <div class="section-title">
+            البحث عن مستفيد
+          </div>
+
+          <div class="section-desc">
+            ابحث بواسطة ID أو الاسم الثلاثي
+            أو اسم الزوج - الزوجه.
+          </div>
+
+        </div>
+
+
+        <div class="search-controls">
+
+          <select
+            id="searchType"
+            class="input"
+          >
+
+            <option value="all">
+              بحث شامل
+            </option>
+
+            <option value="id">
+              ID
+            </option>
+
+            <option value="name">
+              الاسم الثلاثي
+            </option>
+
+            <option value="spouse">
+              اسم الزوج - الزوجه
+            </option>
+
+          </select>
+
+
+          <input
+            id="searchQuery"
+            class="input"
+            type="text"
+            placeholder="اكتب ID أو الاسم..."
+            onkeydown="
+              if(event.key==='Enter'){
+                performSearch();
+              }
+            "
+          >
+
+
+          <button
+            class="btn btn-primary"
+            onclick="performSearch()"
+          >
+            بحث
+          </button>
+
+        </div>
+
+
+        <div class="search-or">
+          أو البحث باستخدام QR
+        </div>
+
+
+        <div class="scanner">
+
+          <div
+            id="reader-search"
+            class="reader"
+          ></div>
+
+
+          <div
+            id="placeholder-search"
+            class="scanner-placeholder"
+          >
+
+            <div class="scan-symbol">
+              ⌕
+            </div>
+
+            <div class="scan-title">
+              البحث بواسطة QR
+            </div>
+
+            <div class="scan-desc">
+              ستتوقف الكاميرا بعد أول قراءة
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <button
+          id="scan-search-btn"
+          class="btn btn-soft scanner-btn"
+          onclick="startScanner('search')"
+        >
+          تشغيل الكاميرا للبحث
+        </button>
+
+
+        <div
+          id="alert-search"
+          class="alert"
+        ></div>
+
+
+        <div
+          id="searchResults"
+          class="search-results"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+</div>
+
+
+
+<!-- LOADING -->
+
+<div
+  id="loading"
+  class="loading"
+>
+
+  <div class="loading-box">
+
+    <div class="spinner"></div>
+
+    <div
+      id="loadingText"
+      class="loading-text"
+    >
+      جاري المعالجة...
+    </div>
+
+  </div>
+
+</div>
+
+
+<div
+  id="toast"
+  class="toast"
+></div>
+
+
+<script>
+
+/* ==========================================
+   CONFIG
+========================================== */
+
+const API_URL =
+'https://script.google.com/macros/s/AKfycbyR-bI5o4Z9AEfblClBE5rKMp8lwLS-jNQdQ89Ph0tcCUgh4Y0EppVbpwkHM-X4QU198A/exec';
+
+
+const PAGE_INFO = {
+
+  home:{
+    title:'الرئيسية',
+    subtitle:'نظام إدارة عمليات التوزيع'
+  },
+
+  card:{
+    title:'تسليم البطاقات',
+    subtitle:'التحقق من المستفيد وتسجيل تسليم البطاقة'
+  },
+
+  basket:{
+    title:'تسليم السلة',
+    subtitle:'التحقق من المستفيد وتسجيل تسليم السلة'
+  },
+
+  search:{
+    title:'البحث عن مستفيد',
+    subtitle:'البحث في بيانات المستفيدين'
+  }
+};
+
+
+let scanner = null;
+let scannerType = null;
+let scannerRunning = false;
+let scannerProcessing = false;
+
+let currentCardPerson = null;
+let currentBasketPerson = null;
+
+let toastTimer = null;
+
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+async function navigate(
+  view,
+  button
+){
+
+  await stopScanner();
+
+
+  document
+    .querySelectorAll('.view')
+    .forEach(
+      el =>
+        el.classList.remove('active')
+    );
+
+
+  document
+    .getElementById(
+      'view-' + view
+    )
+    .classList.add('active');
+
+
+  document
+    .querySelectorAll('.nav-btn')
+    .forEach(
+      el =>
+        el.classList.remove('active')
+    );
+
+
+  const nav =
+    button ||
+    document.querySelector(
+      '.nav-btn[data-view="' +
+      view +
+      '"]'
+    );
+
+
+  if(nav){
+    nav.classList.add('active');
+  }
+
+
+  document.getElementById(
+    'pageTitle'
+  ).textContent =
+    PAGE_INFO[view].title;
+
+
+  document.getElementById(
+    'pageSubtitle'
+  ).textContent =
+    PAGE_INFO[view].subtitle;
+
+
+  document.getElementById(
+    'sidebar'
+  ).classList.remove('open');
+
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+}
+
+
+function toggleSidebar(){
+
+  document
+    .getElementById('sidebar')
+    .classList.toggle('open');
+}
+
+
+/* ==========================================
+   SCANNER
+========================================== */
+
+async function startScanner(type){
+
+  if(
+    scannerRunning ||
+    scannerProcessing
+  ){
+    return;
+  }
+
+
+  hideAlert(type);
+
+
+  const readerId =
+    'reader-' + type;
+
+
+  const placeholder =
+    document.getElementById(
+      'placeholder-' + type
+    );
+
+
+  const button =
+    document.getElementById(
+      'scan-' + type + '-btn'
+    );
+
+
+  placeholder.style.display =
+    'none';
+
+
+  button.disabled = true;
+
+  button.textContent =
+    'جاري تشغيل الكاميرا...';
+
+
+  try{
+
+    scanner =
+      new Html5Qrcode(
+        readerId
+      );
+
+
+    scannerType =
+      type;
+
+
+    await scanner.start(
+
+      {
+        facingMode:
+          'environment'
+      },
+
+      {
+        fps:12,
+
+        qrbox:function(w,h){
+
+          const size =
+            Math.floor(
+              Math.min(w,h) *
+              .68
+            );
+
+          return{
+            width:size,
+            height:size
+          };
+        }
+      },
+
+      function(decodedText){
+
+        onQrRead(
+          type,
+          decodedText
+        );
+      },
+
+      function(){}
+    );
+
+
+    scannerRunning = true;
+
+
+    button.textContent =
+      'الكاميرا تعمل...';
+
+
+  }catch(error){
+
+    console.error(error);
+
+
+    scannerRunning = false;
+
+    scanner = null;
+
+
+    placeholder.style.display =
+      'flex';
+
+
+    button.disabled = false;
+
+    button.textContent =
+      'إعادة محاولة تشغيل الكاميرا';
+
+
+    showAlert(
+      type,
+      'تعذر تشغيل الكاميرا. تأكد من منح الموقع صلاحية الكاميرا.'
+    );
+  }
+}
+
+
+async function onQrRead(
+  type,
+  decodedText
+){
+
+  if(scannerProcessing){
+    return;
+  }
+
+
+  const id =
+    String(
+      decodedText || ''
+    ).trim();
+
+
+  if(!id){
+    return;
+  }
+
+
+  scannerProcessing = true;
+
+
+  try{
+
+    if(navigator.vibrate){
+      navigator.vibrate(80);
+    }
+
+  }catch(e){}
+
+
+  await stopScanner();
+
+
+  scannerProcessing = false;
+
+
+  if(type === 'card'){
+
+    lookupDeliveryPerson(
+      'card',
+      id
+    );
+
+  }else if(type === 'basket'){
+
+    document.getElementById(
+      'basketId'
+    ).value = id;
+
+
+    lookupDeliveryPerson(
+      'basket',
+      id
+    );
+
+  }else if(type === 'search'){
+
+    document.getElementById(
+      'searchType'
+    ).value =
+      'id';
+
+
+    document.getElementById(
+      'searchQuery'
+    ).value =
+      id;
+
+
+    searchByQr(id);
+  }
+}
+
+
+async function stopScanner(){
+
+  if(
+    scanner &&
+    scannerRunning
+  ){
+
+    try{
+      await scanner.stop();
+    }catch(e){}
+
+    try{
+      await scanner.clear();
+    }catch(e){}
+  }
+
+
+  if(scannerType){
+
+    const placeholder =
+      document.getElementById(
+        'placeholder-' +
+        scannerType
+      );
+
+
+    const button =
+      document.getElementById(
+        'scan-' +
+        scannerType +
+        '-btn'
+      );
+
+
+    if(placeholder){
+      placeholder.style.display =
+        'flex';
+    }
+
+
+    if(button){
+
+      button.disabled = false;
+
+      button.textContent =
+        scannerType === 'search'
+          ? 'تشغيل الكاميرا للبحث'
+          : 'تشغيل الكاميرا ومسح QR';
+    }
+  }
+
+
+  scanner = null;
+
+  scannerType = null;
+
+  scannerRunning = false;
+}
+
+
+/* ==========================================
+   CARD / BASKET LOOKUP
+========================================== */
+
+function lookupManualBasket(){
+
+  const id =
+    document.getElementById(
+      'basketId'
+    ).value.trim();
+
+
+  if(!id){
+
+    showAlert(
+      'basket',
+      'أدخل ID المستفيد أولًا.'
+    );
+
+    return;
+  }
+
+
+  lookupDeliveryPerson(
+    'basket',
+    id
+  );
+}
+
+
+function lookupDeliveryPerson(
+  type,
+  id
+){
+
+  hideAlert(type);
+
+  showLoading(
+    'جاري البحث عن المستفيد...'
+  );
+
+
+  apiRequest(
+    {
+      action:'person',
+      id:id
+    },
+
+    function(response){
+
+      hideLoading();
+
+
+      if(
+        !response ||
+        !response.success
+      ){
+
+        showAlert(
+          type,
+          response &&
+          response.message
+            ? response.message
+            : 'لم يتم العثور على المستفيد.'
+        );
+
+        return;
+      }
+
+
+      const person =
+        response.person;
+
+
+      if(type === 'card'){
+
+        currentCardPerson =
+          person;
+
+      }else{
+
+        currentBasketPerson =
+          person;
+      }
+
+
+      renderDeliveryPerson(
+        type,
+        person
+      );
+    },
+
+    function(){
+
+      hideLoading();
+
+      showAlert(
+        type,
+        'تعذر الاتصال بقاعدة البيانات.'
+      );
+    }
+  );
+}
+
+
+/* ==========================================
+   DELIVERY RESULT
+========================================== */
+
+function renderDeliveryPerson(
+  type,
+  person
+){
+
+  const result =
+    document.getElementById(
+      'result-' + type
+    );
+
+
+  const delivered =
+    type === 'card'
+      ? person.cardDelivered
+      : person.basketDelivered;
+
+
+  const itemName =
+    type === 'card'
+      ? 'البطاقة'
+      : 'السلة';
+
+
+  let action;
+
+
+  if(delivered){
+
+    action = `
+
+      <div class="delivered">
+
+        <span>✓</span>
+
+        تم تسليم ${itemName}
+        لهذا المستفيد مسبقًا
+
+      </div>
+
+    `;
+
+  }else{
+
+    action = `
+
+      <button
+        class="btn btn-deliver"
+        onclick="confirmDelivery('${type}')"
+      >
+        تسليم ${itemName}
+      </button>
+
+    `;
+  }
+
+
+  result.innerHTML = `
+
+    <div class="person-main">
+
+      <div class="person-label">
+        الاسم الثلاثي
+      </div>
+
+      <div class="person-name">
+        ${escapeHtml(person.name)}
+      </div>
+
+      <div class="person-id">
+        ID: ${escapeHtml(person.id)}
+      </div>
+
+    </div>
+
+
+    <div class="person-action">
+
+      ${action}
+
+    </div>
+
+  `;
+
+
+  result.style.display =
+    'block';
+}
+
+
+/* ==========================================
+   CONFIRM DELIVERY
+========================================== */
+
+function confirmDelivery(type){
+
+  const person =
+    type === 'card'
+      ? currentCardPerson
+      : currentBasketPerson;
+
+
+  if(!person){
+    return;
+  }
+
+
+  const itemName =
+    type === 'card'
+      ? 'البطاقة'
+      : 'السلة';
+
+
+  showLoading(
+    'جاري تسجيل تسليم ' +
+    itemName +
+    '...'
+  );
+
+
+  apiRequest(
+    {
+      action:
+        type === 'card'
+          ? 'deliverCard'
+          : 'deliverBasket',
+
+      id:
+        person.id
+    },
+
+    function(response){
+
+      hideLoading();
+
+
+      if(
+        !response ||
+        !response.success
+      ){
+
+        showToast(
+          response &&
+          response.message
+            ? response.message
+            : 'تعذر تسجيل التسليم.'
+        );
+
+        return;
+      }
+
+
+      if(type === 'card'){
+
+        currentCardPerson =
+          response.person;
+
+      }else{
+
+        currentBasketPerson =
+          response.person;
+      }
+
+
+      renderDeliveryPerson(
+        type,
+        response.person
+      );
+
+
+      showToast(
+        response.message
+      );
+    },
+
+    function(){
+
+      hideLoading();
+
+      showToast(
+        'تعذر الاتصال بقاعدة البيانات.'
+      );
+    }
+  );
+}
+
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+function performSearch(){
+
+  const query =
+    document.getElementById(
+      'searchQuery'
+    ).value.trim();
+
+
+  const type =
+    document.getElementById(
+      'searchType'
+    ).value;
+
+
+  if(!query){
+
+    showAlert(
+      'search',
+      'اكتب قيمة للبحث.'
+    );
+
+    return;
+  }
+
+
+  runSearch(
+    query,
+    type
+  );
+}
+
+
+function searchByQr(id){
+
+  runSearch(
+    id,
+    'id'
+  );
+}
+
+
+function runSearch(
+  query,
+  type
+){
+
+  hideAlert('search');
+
+
+  showLoading(
+    'جاري البحث...'
+  );
+
+
+  apiRequest(
+    {
+      action:'search',
+      q:query,
+      type:type
+    },
+
+    function(response){
+
+      hideLoading();
+
+
+      if(
+        !response ||
+        !response.success
+      ){
+
+        showAlert(
+          'search',
+          response &&
+          response.message
+            ? response.message
+            : 'حدث خطأ في البحث.'
+        );
+
+        return;
+      }
+
+
+      renderSearchResults(
+        response.results || []
+      );
+    },
+
+    function(){
+
+      hideLoading();
+
+      showAlert(
+        'search',
+        'تعذر الاتصال بقاعدة البيانات.'
+      );
+    }
+  );
+}
+
+
+/* ==========================================
+   SEARCH RESULTS
+========================================== */
+
+function renderSearchResults(results){
+
+  const container =
+    document.getElementById(
+      'searchResults'
+    );
+
+
+  if(!results.length){
+
+    container.innerHTML = `
+
+      <div class="alert"
+           style="display:block">
+
+        لم يتم العثور على نتائج مطابقة.
+
+      </div>
+
+    `;
+
+    return;
+  }
+
+
+  let html = `
+
+    <div class="result-count">
+
+      تم العثور على
+      ${results.length}
+      نتيجة
+
+    </div>
+
+  `;
+
+
+  results.forEach(
+    function(person){
+
+      html += `
+
+        <div class="result-card">
+
+
+          <div class="result-top">
+
+            <div class="result-name">
+
+              ${escapeHtml(person.name)}
+
+            </div>
+
+
+            <div class="result-id">
+
+              ID:
+              ${escapeHtml(person.id)}
+
+            </div>
+
+          </div>
+
+
+          <div class="info-grid">
+
+
+            <div class="info-item">
+
+              <div class="info-label">
+
+                اسم الزوج - الزوجه
+
+              </div>
+
+              <div class="info-value">
+
+                ${escapeHtml(person.spouse)}
+
+              </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+              <div class="info-label">
+
+                الهاتف
+
+              </div>
+
+              <div
+                class="info-value"
+                dir="ltr"
+              >
+
+                ${escapeHtml(person.phone)}
+
+              </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+              <div class="info-label">
+
+                ID
+
+              </div>
+
+              <div
+                class="info-value"
+                dir="ltr"
+              >
+
+                ${escapeHtml(person.id)}
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="delivery-statuses">
+
+
+            <span class="
+              badge
+              ${person.cardDelivered
+                ? 'yes'
+                : 'no'}
+            ">
+
+              ${
+                person.cardDelivered
+                  ? '✓ البطاقة: تم التسليم'
+                  : '○ البطاقة: لم يتم التسليم'
+              }
+
+            </span>
+
+
+            <span class="
+              badge
+              ${person.basketDelivered
+                ? 'yes'
+                : 'no'}
+            ">
+
+              ${
+                person.basketDelivered
+                  ? '✓ السلة: تم التسليم'
+                  : '○ السلة: لم يتم التسليم'
+              }
+
+            </span>
+
+
+          </div>
+
+
+        </div>
+
+      `;
+    }
+  );
+
+
+  container.innerHTML =
+    html;
+}
+
+
+/* ==========================================
+   JSONP API
+========================================== */
+
+function apiRequest(
+  params,
+  success,
+  failure
+){
+
+  const callback =
+
+    'iac_' +
+
+    Date.now() +
+
+    '_' +
+
+    Math.floor(
+      Math.random() *
+      100000
+    );
+
+
+  const script =
+    document.createElement(
+      'script'
+    );
+
+
+  let done = false;
+
+
+  const timeout =
+    setTimeout(
+      function(){
+
+        if(done){
+          return;
+        }
+
+        done = true;
+
+        cleanup();
+
+        if(failure){
+          failure(
+            new Error(
+              'timeout'
+            )
+          );
+        }
+
+      },
+      15000
+    );
+
+
+  function cleanup(){
+
+    clearTimeout(timeout);
+
+    try{
+      delete window[callback];
+    }catch(e){}
+
+    if(script.parentNode){
+      script.parentNode.removeChild(script);
+    }
+  }
+
+
+  window[callback] =
+    function(data){
+
+      if(done){
+        return;
+      }
+
+      done = true;
+
+      cleanup();
+
+      if(success){
+        success(data);
+      }
+    };
+
+
+  script.onerror =
+    function(){
+
+      if(done){
+        return;
+      }
+
+      done = true;
+
+      cleanup();
+
+      if(failure){
+        failure(
+          new Error(
+            'connection failed'
+          )
+        );
+      }
+    };
+
+
+  params.callback =
+    callback;
+
+  params._ =
+    Date.now();
+
+
+  script.src =
+    API_URL +
+    '?' +
+    new URLSearchParams(
+      params
+    ).toString();
+
+
+  document.body.appendChild(
+    script
+  );
+}
+
+
+/* ==========================================
+   UI HELPERS
+========================================== */
+
+function showAlert(type,text){
+
+  const el =
+    document.getElementById(
+      'alert-' + type
+    );
+
+  el.textContent =
+    text;
+
+  el.style.display =
+    'block';
+}
+
+
+function hideAlert(type){
+
+  const el =
+    document.getElementById(
+      'alert-' + type
+    );
+
+  if(el){
+    el.style.display =
+      'none';
+  }
+}
+
+
+function showLoading(text){
+
+  document.getElementById(
+    'loadingText'
+  ).textContent =
+    text || 'جاري المعالجة...';
+
+
+  document.getElementById(
+    'loading'
+  ).classList.add('active');
+}
+
+
+function hideLoading(){
+
+  document.getElementById(
+    'loading'
+  ).classList.remove('active');
+}
+
+
+function showToast(text){
+
+  const el =
+    document.getElementById(
+      'toast'
+    );
+
+
+  el.textContent =
+    text;
+
+
+  el.classList.add(
+    'show'
+  );
+
+
+  clearTimeout(
+    toastTimer
+  );
+
+
+  toastTimer =
+    setTimeout(
+      function(){
+
+        el.classList.remove(
+          'show'
+        );
+
+      },
+      3000
+    );
+}
+
+
+function escapeHtml(value){
+
+  return String(
+    value == null
+      ? ''
+      : value
+  )
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#039;');
+}
+
+
+/*
+ * إيقاف الكاميرا عند الخروج
+ */
+
+window.addEventListener(
+  'pagehide',
+  function(){
+
+    if(
+      scanner &&
+      scannerRunning
+    ){
+
+      try{
+        scanner.stop();
+      }catch(e){}
+    }
+  }
+);
+
+</script>
+
+</body>
 </html>
